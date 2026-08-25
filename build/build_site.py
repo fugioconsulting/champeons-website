@@ -379,8 +379,7 @@ img{max-width:100%;display:block}
 .channelbar{
   position:sticky;top:0;z-index:40;display:flex;align-items:stretch;gap:10px;
   padding:8px max(20px,calc((100% - 1180px)/2));
-  background:color-mix(in srgb,var(--ground-2) 88%,transparent);
-  backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft);
+  background:var(--ground-2);border-bottom:1px solid var(--line-soft);
 }
 .dialwrap{display:flex;gap:2px;flex:1;overflow-x:auto;scrollbar-width:none}
 .dialwrap::-webkit-scrollbar{display:none}
@@ -487,7 +486,6 @@ h1 em{font-style:normal;color:var(--gold)}
 .ev{
   display:grid;grid-template-columns:22px 130px 1fr;gap:0 20px;
   padding:22px 0;border-bottom:1px solid var(--line-soft);
-  content-visibility:auto;contain-intrinsic-size:auto 220px;
 }
 .ev.hidden{display:none}
 .ev-rail{position:relative;display:flex;justify-content:center}
