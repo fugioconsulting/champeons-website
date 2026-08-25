@@ -237,8 +237,11 @@ def build():
         h = max(8, round(100 * len(items) / max_n))
         dial_items.append(f'<a class="dial" href="#{c["id"]}" data-section="{c["id"]}"><span class="dial-bar"><i style="height:{h}%"></i></span><span class="dial-label">{c["label"]}</span></a>')
         mood = ""
-        for p in by_decade.get(str(c["lo"])[:3], []):
-            if id(p) not in used:
+        plist = json.loads(PHOTOS.read_text()) if PHOTOS.exists() else []
+        explicit = [p for p in plist if p.get("chapter") == c["id"] and p.get("local")]
+        pool = explicit or by_decade.get(str(c["lo"])[:3], [])
+        for p in pool:
+            if id(p) not in used and p.get("local"):
                 used.add(id(p))
                 mood = photo_fig(p, "chapter-photo")
                 break
