@@ -32,7 +32,7 @@ CHAPTERS = [
          intro="1958: a San Francisco lawyer named Louis Kelso and a celebrity philosopher named Mortimer Adler publish The Capitalist Manifesto and put a wild claim in front of mainstream America — capitalism is great, there just aren't enough capitalists. Meanwhile Tennessee Ernie Ford's 'Sixteen Tons' sits at number one, sixteen million Americans humming about owing their soul to the company store. The problem statement and the solution hit the airwaves in the same decade."),
     dict(id="seventies", lo=1970, hi=1979, num="1974", label="1970s",
          name="Kelso Gets His Law",
-         intro="The decade employee ownership stopped being a book and became a statute. Russell Long — son of Huey, king of the Senate Finance Committee — hears Kelso out and writes the ESOP into ERISA in 1974. Mike Wallace puts Kelso on 60 Minutes and America meets the two-factor theory in prime time. Ursula K. Le Guin publishes The Dispossessed and science fiction spends the rest of the century arguing about who owns the means of production."),
+         intro="The decade employee ownership stopped being a book and became a statute. Russell Long — son of Huey, king of the Senate Finance Committee — hears Kelso out and writes the ESOP — the Employee Stock Ownership Plan — into ERISA in 1974. Mike Wallace puts Kelso on 60 Minutes and America meets the two-factor theory in prime time. Ursula K. Le Guin publishes The Dispossessed and science fiction spends the rest of the century arguing about who owns the means of production."),
     dict(id="eighties", lo=1980, hi=1989, num="1983", label="1980s",
          name="Primetime",
          intro="Employee ownership goes to the movies. Weirton's steelworkers buy their mill and make every front page in America. Dolly Parton takes '9 to 5' to number one and an Oscar nomination. Oliver Stone puts a union stock deal at the center of Wall Street — the good guys' plan, opposite Gordon Gekko. Reagan, of all people, keeps quoting Kelso. The idea has never had this much screen time since."),
@@ -89,6 +89,9 @@ def pretty_date(e):
     m = re.match(r"^(\d{4})-(\d{2})$", d)
     if m and 1 <= int(m.group(2)) <= 12:
         return f"{months[int(m.group(2)) - 1]} {m.group(1)}"
+    m = re.match(r"^(\d{4}s?)-(\d{4}s?)$", d)
+    if m:
+        return f"{m.group(1)}–{m.group(2)}"
     return d
 
 
@@ -126,20 +129,31 @@ def photo_for(e, by_frag, used):
 
 def photo_fig(p, cls="card-photo"):
     src = esc(p["local"])
+    dims = ""
+    if p.get("w") and p.get("h"):
+        dims = f' width="{esc(p["w"])}" height="{esc(p["h"])}"'
     return (f'<figure class="{cls}"><img src="{src}" alt="{esc(p.get("caption") or p.get("subject"))}" loading="lazy" '
+            f'tabindex="0" role="button" aria-label="View photo full size"{dims} '
             f'data-caption="{esc(p.get("caption") or p.get("subject"))}" data-credit="{esc(p.get("author"))}" '
             f'data-license="{esc(p.get("license"))}" data-page="{esc(p.get("file_page_url"))}">'
             f'<figcaption>{esc(p.get("caption") or p.get("subject"))} <span class="ph-credit">{esc(p.get("license"))}</span></figcaption></figure>')
 
 
+def trunc60(s):
+    s = str(s or "")
+    return s if len(s) <= 60 else s[:60] + "…"
+
+
 def meta_row(e):
     bits = [f'<span class="m-medium">{esc(MEDIUM_LABELS.get(e["_medium"], e["_medium"]))}</span>']
     if e.get("company"):
-        bits.append(f'<span class="m-co">{esc(e["company"])}</span>')
+        bits.append(f'<span class="m-co" title="{esc(e["company"])}">{esc(trunc60(e["company"]))}</span>')
     if e.get("eo_model"):
-        bits.append(f'<span class="m-model">{esc(e["eo_model"])}</span>')
+        bits.append(f'<span class="m-model" title="{esc(e["eo_model"])}">{esc(trunc60(e["eo_model"]))}</span>')
     if e.get("audience_metric"):
-        bits.append(f'<span class="m-num">{esc(e["audience_metric"])[:72]}</span>')
+        met = str(e["audience_metric"])
+        short = met if len(met) <= 90 else met[:89] + "\u2026"
+        bits.append(f'<span class="m-num" title="{esc(met)}">{esc(short)}</span>')
     conf = str(e.get("confidence", "")).lower()
     if conf in ("likely", "uncertain"):
         bits.append(f'<span class="m-conf c-{conf}">{conf}</span>')
@@ -150,8 +164,26 @@ def meta_row(e):
     return "".join(bits)
 
 
+_ID_SEEN = {}
 def entry_id(e):
-    return "e-" + re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", norm(e["title"])))[:64].strip("-")
+    base = "e-" + re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", norm(e["title"])))[:64].strip("-")
+    key = id(e)
+    if key in _ID_SEEN:
+        return _ID_SEEN[key]
+    n = sum(1 for v in _ID_SEEN.values() if v == base or v.startswith(base + "-x"))
+    out = base if n == 0 else f"{base}-x{n}"
+    _ID_SEEN[key] = out
+    return out
+
+
+YT_RE = re.compile(r"(?:youtube\.com/watch\?v=|youtu\.be/)([A-Za-z0-9_-]{6,20})")
+
+def youtube_id(e):
+    for k in ("source_url", "source_url_2"):
+        m = YT_RE.search(str(e.get(k, "") or ""))
+        if m:
+            return m.group(1)
+    return None
 
 
 def render_entry(e, photo):
@@ -159,8 +191,17 @@ def render_entry(e, photo):
     qh = f'<blockquote class="ev-quote">{esc(quote)}</blockquote>' if quote and len(quote.split()) <= 18 else ""
     angle = str(e.get("champeons_angle", "") or "").strip()
     ah = f'<p class="ev-angle"><span>Use it on the show</span>{esc(angle)}</p>' if angle else ""
-    ph = photo_fig(photo) if photo else ""
-    feature = " feature" if (photo or e["_reach"] == "massive") else ""
+    yid = youtube_id(e)
+    if yid:
+        t0 = int(e.get("yt_start") or 0)
+        mmss = f"{t0 // 60}:{t0 % 60:02d}"
+        tag = f"Watch from {mmss} &mdash; where the ownership story starts" if t0 else "Watch the video"
+        ph = (f'<div class="yt" data-yid="{yid}" data-start="{t0}" role="button" tabindex="0" aria-label="Play video">'
+              f'<img src="https://i.ytimg.com/vi/{yid}/hqdefault.jpg" alt="Video: {esc(e.get("title"))}" loading="lazy">'
+              f'<span class="yt-play" aria-hidden="true"></span><span class="yt-tag">{tag}</span></div>')
+    else:
+        ph = photo_fig(photo) if photo else ""
+    feature = " feature" if (yid or photo or e["_reach"] == "massive") else ""
     searchable = " ".join(str(e.get(k, "") or "") for k in ("title", "venue", "company", "what_happened", "why_it_mattered", "eo_model"))
     return f"""<article class="ev r-{e['_reach']} v-{e['_valence']}{feature}" id="{entry_id(e)}"
   data-medium="{esc(e['_medium'])}" data-reach="{e['_reach']}" data-valence="{e['_valence']}" data-track="{e['_track']}"
@@ -202,7 +243,7 @@ def build():
     chips = {
         "track": [("news", "The news record"), ("culture", "Pop culture")],
         "reach": [(k, v) for k, v in REACH_LABEL.items() if k != "unknown"],
-        "valence": [("pro", "Favourable"), ("neutral", "Straight"), ("mixed", "Mixed"), ("critical", "Critical")],
+        "valence": [("pro", "Favourable"), ("neutral", "Straight news"), ("mixed", "Mixed"), ("critical", "Critical")],
         "medium": [(m, MEDIUM_LABELS[m]) for m, _ in media_counts.most_common()],
     }
 
@@ -221,11 +262,14 @@ def build():
                 return e
         return None
 
-    pt_chips = []
+    pt_found = []
     for frag, label in PRIME_TIME:
         e = find_entry(frag)
         if e:
-            pt_chips.append(f'<button class="pt-chip" data-target="{entry_id(e)}"><span class="pt-yr">{e["_year"]}</span>{esc(label)}</button>')
+            pt_found.append((e["_year"], entry_id(e), label))
+    pt_found.sort()
+    pt_chips = [f'<button class="pt-chip" data-target="{eid}"><span class="pt-yr">{yr}</span>{esc(label)}</button>'
+                for yr, eid, label in pt_found]
 
     # chapters
     max_n = max(sum(1 for e in entries if c["lo"] <= e["_year"] <= c["hi"]) for c in CHAPTERS)
@@ -269,9 +313,14 @@ def build():
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Ownership Airwaves &middot; ChampEOns</title>
 <meta name="description" content="Every time employee ownership reached the public — {total} verified moments across {2026 - 1844} years of front pages, films, broadcasts and viral stories. A ChampEOns research file.">
+<meta property="og:title" content="The Ownership Airwaves">
+<meta property="og:description" content="{total} verified moments when employee ownership reached the public — front pages, films, broadcasts and viral stories, 1844 to today. From the ChampEOns podcast.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fugioconsulting.github.io/champeons-website/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&amp;family=Archivo:wght@400;500;600;700&amp;display=swap">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2214%22 fill=%22%23112347%22/><text x=%2250%22 y=%2268%22 font-size=%2246%22 text-anchor=%22middle%22 fill=%22%23F0B750%22 font-family=%22Georgia%22 font-weight=%22bold%22>EO</text></svg>">
 <style>{CSS}</style>
 </head>
@@ -279,7 +328,7 @@ def build():
 
 <header class="masthead">
   <a class="wordmark" href="#top">Champ<span>EO</span>ns</a>
-  <span class="mast-note">A research file from Champions of Employee Ownership</span>
+  <span class="mast-note">From the ChampEOns podcast &mdash; Champions of Employee Ownership</span>
   <button class="surprise" id="surprise" title="Jump to a random moment">&#9889; Surprise me</button>
 </header>
 
@@ -301,7 +350,8 @@ def build():
   <section class="hero">
     <p class="eyebrow">The public record &middot; 1844&ndash;2026</p>
     <h1>The Ownership<br><em>Airwaves</em></h1>
-    <p class="lede">Every time employee ownership escaped the boardroom and reached actual people &mdash; front pages, prime time, movie screens, podcasts, stadium PA systems and viral feeds. {total} moments, every one checked against a source.</p>
+    <p class="lede"><strong>This is the complete public history of employee ownership</strong> &mdash; every time the idea that workers should own their companies escaped the boardroom and reached actual people. Front pages, prime time, movie screens, podcasts, stadium PA systems and viral feeds: {total} moments, every one fact-checked against a source you can click.</p>
+    <p class="hero-how">Scroll the eras, hit <b>&#9889; Surprise me</b> to channel-surf, or start with the ten biggest moments below. Photos open full-size; gold dots mean a mass audience saw it; red means the coverage was hostile.</p>
     <dl class="stats">
       <div><dd data-count="{total}">0</dd><dt>verified moments</dt></div>
       <div><dd data-count="{massive}">0</dd><dt>reached a mass audience</dt></div>
@@ -321,13 +371,13 @@ def build():
   <footer class="foot">
     <h2 class="foot-title">How this was built</h2>
     <p>More than a hundred research agents swept the record era by era and channel by channel &mdash; newspapers, network television, film, advertising, politics, audio and the viral internet. Every candidate moment was then re-checked by an independent fact-checker against a live source; what couldn't be substantiated was cut. Entries marked <span class="m-conf c-likely">likely</span> or <span class="m-conf c-uncertain">uncertain</span> are believed real but not pinned to a public source &mdash; treat them as leads. Photographs are public domain or Creative Commons, credited in each caption; click any photo for its license and origin.</p>
-    <p>Spotted something we missed &mdash; or something wrong? The record should grow. Send it to the show.</p>
+    <p>Spotted something we missed &mdash; or something wrong? The record should grow. <a href="https://github.com/fugioconsulting/champeons-website/issues" target="_blank" rel="noopener">Send it to the show</a>.</p>
     <p class="refrain">The robots are coming. And we better own them.</p>
     <p class="foot-brand">&copy; Champions of Employee Ownership LLC &middot; Produced by Fugio Consulting</p>
   </footer>
 </main>
 
-<div class="lightbox" id="lightbox" hidden>
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true">
   <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
   <img id="lbImg" alt="">
   <div class="lb-cap" id="lbCap"></div>
@@ -381,8 +431,9 @@ img{max-width:100%;display:block}
   padding:8px max(20px,calc((100% - 1180px)/2));
   background:var(--ground-2);border-bottom:1px solid var(--line-soft);
 }
-.dialwrap{display:flex;gap:2px;flex:1;overflow-x:auto;scrollbar-width:none}
-.dialwrap::-webkit-scrollbar{display:none}
+.dialwrap{display:flex;gap:2px;flex:1;overflow-x:auto;scrollbar-width:thin;
+  mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 26px),transparent);
+  -webkit-mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 26px),transparent)}
 .dial{
   flex:1 0 66px;display:flex;flex-direction:column;align-items:center;gap:4px;
   padding:5px 4px 4px;text-decoration:none;color:var(--ink-3);border-radius:4px;
@@ -405,6 +456,7 @@ img{max-width:100%;display:block}
 /* drawer */
 .drawer[hidden]{display:none}
 .drawer{
+  max-height:calc(100vh - 72px);overflow-y:auto;
   position:sticky;top:57px;z-index:39;
   padding:16px max(20px,calc((100% - 1180px)/2)) 18px;
   background:var(--ground-2);border-bottom:1px solid var(--line);
@@ -420,7 +472,7 @@ img{max-width:100%;display:block}
 .ctl>span{flex:0 0 58px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
 .chips{display:flex;flex-wrap:wrap;gap:6px;flex:1}
 .chip{
-  display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;
+  display:inline-flex;align-items:center;gap:6px;padding:9px 13px;min-height:40px;border-radius:999px;
   font:inherit;font-size:12.5px;cursor:pointer;
   background:var(--surface);color:var(--ink-2);border:1px solid var(--line);
   transition:all .12s;
@@ -431,7 +483,7 @@ img{max-width:100%;display:block}
 .chip[aria-pressed="true"] b{color:rgba(26,18,0,.55)}
 .ctl-foot{display:flex;align-items:center;gap:14px}
 .count{font-size:12.5px;color:var(--ink-2);font-variant-numeric:tabular-nums}
-.reset{font:inherit;font-size:12px;letter-spacing:.05em;cursor:pointer;background:none;border:1px solid var(--line);color:var(--ink-2);padding:7px 13px;border-radius:6px}
+.reset{font:inherit;font-size:12px;letter-spacing:.05em;cursor:pointer;background:none;border:1px solid var(--line);color:var(--ink-2);padding:10px 14px;min-height:40px;border-radius:6px}
 .reset:hover{color:var(--ink);border-color:var(--ink-3)}
 
 main{max-width:1180px;margin:0 auto;padding:0 max(20px,4vw) 90px}
@@ -444,7 +496,10 @@ h1{
   font-size:clamp(2.8rem,8.6vw,6.4rem);line-height:.96;color:var(--white);text-wrap:balance;
 }
 h1 em{font-style:normal;color:var(--gold)}
-.lede{max-width:62ch;font-size:clamp(1.02rem,1.7vw,1.24rem);color:var(--ink-2);margin:0 0 40px}
+.lede{max-width:62ch;font-size:clamp(1.02rem,1.7vw,1.24rem);color:var(--ink-2);margin:0 0 14px}
+.lede strong{color:var(--ink)}
+.hero-how{max-width:62ch;font-size:13.5px;color:var(--ink-3);margin:0 0 40px}
+.hero-how b{color:var(--gold)}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;margin:0;background:var(--line-soft);border:1px solid var(--line-soft)}
 .stats>div{background:var(--surface);padding:20px 20px 16px}
 .stats dd{margin:0;font-family:Graduate,serif;font-size:2.4rem;line-height:1;color:var(--gold);font-variant-numeric:tabular-nums}
@@ -478,9 +533,15 @@ h1 em{font-style:normal;color:var(--gold)}
 .ch-count{margin:0;font-size:12px;color:var(--ink-3)}
 .ch-count b{color:var(--gold);font-variant-numeric:tabular-nums}
 .chapter-photo{margin:0;border:1px solid var(--line)}
-.chapter-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;cursor:zoom-in;filter:saturate(.85)}
+.chapter-photo img{width:100%;max-height:340px;object-fit:contain;background:var(--ground-2);cursor:zoom-in;filter:saturate(.9)}
 .chapter-photo figcaption,.card-photo figcaption{font-size:10.5px;color:var(--ink-3);padding:6px 8px;background:var(--ground-2)}
 .ph-credit{opacity:.7}
+.card-photo,.chapter-photo{position:relative}
+.card-photo::after,.chapter-photo::after{
+  content:"\2922";position:absolute;top:8px;right:8px;width:26px;height:26px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;color:#fff;background:rgba(8,18,40,.72);border-radius:4px;pointer-events:none;
+}
 
 /* entries */
 .ev{
@@ -495,7 +556,7 @@ h1 em{font-style:normal;color:var(--gold)}
 .r-massive .dot{background:var(--gold);border-color:var(--gold);width:13px;height:13px;box-shadow:0 0 0 5px rgba(240,183,80,.18)}
 .v-critical .dot{border-color:var(--crit)}
 .r-massive.v-critical .dot,.r-national.v-critical .dot{background:var(--crit);border-color:var(--crit);box-shadow:none}
-.ev-when time{display:block;padding-top:4px;font-size:12.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.ev-when time{display:block;padding-top:4px;font-size:12.5px;color:var(--ink-2);font-variant-numeric:tabular-nums}
 .ev-reach{display:block;margin-top:4px;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
 .r-massive .ev-reach{color:var(--gold)}
 .ev-body h3{margin:0 0 3px;font-size:1.1rem;line-height:1.3;font-weight:700;color:var(--white);text-wrap:balance}
@@ -511,16 +572,26 @@ h1 em{font-style:normal;color:var(--gold)}
 .ev-angle{margin:0 0 12px;max-width:64ch;font-size:13.5px;color:var(--ink-2);padding:10px 13px;background:var(--surface);border-left:2px solid var(--gold)}
 .ev-angle span{color:var(--gold)}
 .card-photo{margin:0 0 14px;max-width:460px;border:1px solid var(--line)}
-.card-photo img{width:100%;max-height:300px;object-fit:cover;cursor:zoom-in}
+.card-photo img{width:100%;max-height:380px;object-fit:contain;background:var(--ground-2);cursor:zoom-in}
 .ev-meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:11px}
 .ev-meta>*{padding:3px 8px;border:1px solid var(--line);border-radius:3px;color:var(--ink-3);letter-spacing:.04em;text-decoration:none}
 .m-medium{background:var(--surface);color:var(--ink-2)!important;text-transform:uppercase;font-size:10px;letter-spacing:.09em}
 .m-co{color:var(--ink-2)!important;font-weight:600}
-.m-model{border-style:dashed}
+.m-model{border-style:dashed;color:var(--ink-2)!important}
 .m-num{font-variant-numeric:tabular-nums;color:var(--ink-2)!important;background:var(--surface)}
 .m-conf{border-color:var(--gold-deep);color:var(--gold)!important;text-transform:uppercase;font-size:10px}
 .m-conf.c-uncertain{border-color:var(--crit);color:var(--crit)!important}
 a.src:hover{border-color:var(--gold);color:var(--ink)!important;background:var(--surface)}
+
+/* youtube facade */
+.yt{position:relative;max-width:460px;margin:0 0 14px;cursor:pointer;border:1px solid var(--line);background:#000;aspect-ratio:16/9;overflow:hidden}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.82}
+.yt:hover img{opacity:1}
+.yt-play{position:absolute;top:50%;left:50%;width:62px;height:44px;transform:translate(-50%,-50%);background:var(--gold);border-radius:10px}
+.yt-play::after{content:"";position:absolute;top:50%;left:50%;transform:translate(-40%,-50%);border-style:solid;border-width:11px 0 11px 18px;border-color:transparent transparent transparent #10131a}
+.yt:hover .yt-play{background:#fff}
+.yt-tag{position:absolute;left:10px;bottom:8px;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:rgba(0,0,0,.55);padding:3px 8px;border-radius:3px}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 
 /* zap flash for surprise/prime-time jumps */
 @keyframes zap{0%{background:rgba(240,183,80,.22)}100%{background:transparent}}
@@ -541,10 +612,10 @@ a.src:hover{border-color:var(--gold);color:var(--ink)!important;background:var(-
   align-items:center;justify-content:center;gap:14px;padding:30px;
   background:rgba(4,9,20,.93);
 }
-.lightbox img{max-width:min(1100px,94vw);max-height:76vh;object-fit:contain;border:1px solid var(--line)}
+.lightbox img{max-width:min(1100px,calc(94vw - 40px));max-height:74vh;object-fit:contain;border:1px solid var(--line)}
 .lb-cap{max-width:80ch;text-align:center;font-size:13px;color:var(--ink-2)}
 .lb-cap a{color:var(--gold)}
-.lb-close{position:absolute;top:14px;right:20px;font-size:34px;line-height:1;background:none;border:0;color:var(--ink-2);cursor:pointer}
+.lb-close{position:absolute;top:8px;right:12px;min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center;font-size:34px;line-height:1;background:none;border:0;color:var(--ink-2);cursor:pointer}
 .lb-close:hover{color:var(--white)}
 
 @media (max-width:860px){
@@ -553,10 +624,11 @@ a.src:hover{border-color:var(--gold);color:var(--ink)!important;background:var(-
 }
 @media (max-width:720px){
   .ev{grid-template-columns:16px 1fr;gap:0 12px}
+  .ev-rail{grid-row:1 / 3}
   .ev-when{grid-column:2;order:-1;display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
   .ev-when time{padding-top:0}
   .ev-body{grid-column:2}
-  .mast-note{display:none}
+  .mast-note{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;min-width:0}
   .ctl>span{flex-basis:100%}
 }
 @media (prefers-reduced-motion:reduce){
@@ -573,26 +645,27 @@ JS = r"""
   var active={track:new Set(),reach:new Set(),valence:new Set(),medium:new Set()};
 
   /* count-up stats */
-  var counted=false;
-  function countUp(){
-    if(counted)return; counted=true;
-    $$('.stats dd').forEach(function(dd){
-      var end=+dd.dataset.count, t0=null;
-      function step(t){
-        if(!t0)t0=t;
-        var p=Math.min(1,(t-t0)/1100);
-        dd.textContent=Math.round(end*(1-Math.pow(1-p,3)));
-        if(p<1)requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-    });
-  }
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(en){ if(en[0].isIntersecting) countUp(); },{threshold:.3});
-    io.observe($('.stats'));
-  } else countUp();
   if(matchMedia('(prefers-reduced-motion: reduce)').matches){
-    counted=true; $$('.stats dd').forEach(function(dd){dd.textContent=dd.dataset.count});
+    $$('.stats dd').forEach(function(dd){dd.textContent=dd.dataset.count});
+  } else {
+    var counted=false;
+    function countUp(){
+      if(counted)return; counted=true;
+      $$('.stats dd').forEach(function(dd){
+        var end=+dd.dataset.count, t0=null;
+        function step(t){
+          if(!t0)t0=t;
+          var p=Math.min(1,(t-t0)/1100);
+          dd.textContent=Math.round(end*(1-Math.pow(1-p,3)));
+          if(p<1)requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    }
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(en){ if(en[0].isIntersecting) countUp(); },{threshold:.3});
+      io.observe($('.stats'));
+    } else countUp();
   }
 
   /* scrollspy on chapter dial */
@@ -659,30 +732,87 @@ JS = r"""
   }
   $('#surprise').addEventListener('click',function(){
     var vis=evs.filter(function(e){return !e.classList.contains('hidden')});
-    if(vis.length)jumpTo(vis[Math.floor(Math.random()*vis.length)]);
+    if(vis.length){
+      jumpTo(vis[Math.floor(Math.random()*vis.length)]);
+    } else {
+      count.textContent='Nothing matches your filters — hit Clear all';
+      if(drawer.hidden){drawer.hidden=false;toggle.setAttribute('aria-expanded','true')}
+    }
   });
   $$('.pt-chip').forEach(function(c){
     c.addEventListener('click',function(){
       var el=document.getElementById(c.dataset.target);
-      if(el)jumpTo(el);
+      if(!el)return;
+      if(el.classList.contains('hidden'))$('#reset').click();
+      jumpTo(el);
     });
   });
 
+  /* youtube click-to-play */
+  function playYt(box){
+    if(box.querySelector('iframe'))return;
+    var f=document.createElement('iframe');
+    var t=parseInt(box.dataset.start||'0',10)||0;
+    f.src='https://www.youtube-nocookie.com/embed/'+box.dataset.yid+'?autoplay=1'+(t?('&start='+t):'');
+    f.allow='accelerometer; autoplay; encrypted-media; picture-in-picture';
+    f.allowFullscreen=true;
+    box.innerHTML='';box.appendChild(f);
+  }
+  $$('.yt').forEach(function(b){
+    b.addEventListener('click',function(){playYt(b)});
+    b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();playYt(b)}});
+  });
+
   /* lightbox */
-  var lb=$('#lightbox'), lbImg=$('#lbImg'), lbCap=$('#lbCap');
+  var lb=$('#lightbox'), lbImg=$('#lbImg'), lbCap=$('#lbCap'), lbClose=$('#lbClose');
+  var lbReturnFocus=null;
+  function openLightbox(img){
+    lbImg.src=img.src; lbImg.alt=img.dataset.caption||'';
+    lbCap.innerHTML='';
+    var strong=document.createElement('strong');
+    strong.textContent=img.dataset.caption||'';
+    lbCap.appendChild(strong);
+    lbCap.appendChild(document.createElement('br'));
+    lbCap.appendChild(document.createTextNode((img.dataset.credit||'')+' · '+(img.dataset.license||'')));
+    if(img.dataset.page){
+      lbCap.appendChild(document.createTextNode(' · '));
+      var a=document.createElement('a');
+      a.href=img.dataset.page; a.target='_blank'; a.rel='noopener'; a.textContent='origin';
+      lbCap.appendChild(a);
+    }
+    lbReturnFocus=document.activeElement;
+    lb.hidden=false; document.body.style.overflow='hidden';
+    lbClose.focus();
+  }
   document.addEventListener('click',function(ev){
     var img=ev.target.closest('.card-photo img,.chapter-photo img');
     if(!img)return;
-    lbImg.src=img.src; lbImg.alt=img.dataset.caption||'';
-    lbCap.innerHTML='<strong>'+(img.dataset.caption||'')+'</strong><br>'+
-      (img.dataset.credit||'')+' &middot; '+(img.dataset.license||'')+
-      (img.dataset.page?(' &middot; <a href="'+img.dataset.page+'" target="_blank" rel="noopener">origin</a>'):'');
-    lb.hidden=false; document.body.style.overflow='hidden';
+    openLightbox(img);
   });
-  function closeLb(){lb.hidden=true;document.body.style.overflow=''}
-  $('#lbClose').addEventListener('click',closeLb);
+  document.addEventListener('keydown',function(ev){
+    if(ev.key!=='Enter'&&ev.key!==' ')return;
+    var img=ev.target.closest&&ev.target.closest('.card-photo img,.chapter-photo img');
+    if(!img)return;
+    ev.preventDefault();
+    openLightbox(img);
+  });
+  function closeLb(){
+    lb.hidden=true;document.body.style.overflow='';
+    if(lbReturnFocus&&lbReturnFocus.focus)lbReturnFocus.focus();
+    lbReturnFocus=null;
+  }
+  lbClose.addEventListener('click',closeLb);
   lb.addEventListener('click',function(e){if(e.target===lb)closeLb()});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!lb.hidden)closeLb()});
+  document.addEventListener('keydown',function(e){
+    if(!lb.hidden){
+      if(e.key==='Escape')closeLb();
+      if(e.key==='Tab'){e.preventDefault();lbClose.focus()}
+      return;
+    }
+    if(e.key==='Escape'&&!drawer.hidden){
+      drawer.hidden=true;toggle.setAttribute('aria-expanded','false');toggle.focus();
+    }
+  });
 })();
 """
 

@@ -6,9 +6,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rochdale%20Society%20of%20Equitable%20Pioneers%201865%20photograph.jpg?width=1000",
   "license": "Public domain (published before January 1, 1931; author's life plus 70 years or fewer has expired)",
   "author": "Unknown author",
-  "caption": "Thirteen of the original Rochdale Pioneers, photographed in 1865 \u2014 the founders of the co-op that wrote the Rochdale Principles.",
+  "caption": "Thirteen of the original Rochdale Pioneers, photographed in 1865 — the founders of the co-op that wrote the Rochdale Principles.",
   "era_decade": "1860",
-  "local": "assets/img/00-1865-group-photograph-of-thirteen-surviving-rochdale-pio.jpg"
+  "local": "assets/img/00-1865-group-photograph-of-thirteen-surviving-rochdale-pio.jpg",
+  "w": 1200,
+  "h": 991
  },
  {
   "match_title_fragment": "Knights of Labor build a national wave of worker cooperatives",
@@ -19,7 +21,9 @@
   "author": "Kurz & Allison, copyright claimant (1886); Library of Congress Prints and Photographs Division",
   "caption": "An 1886 Kurz & Allison lithograph honoring the leadership of the Knights of Labor, then pushing a national wave of worker cooperatives under the 'Cooperative Commonwealth' banner.",
   "era_decade": "1880",
-  "local": "assets/img/01-1886-kurz-allison-lithograph-leaders-of-the-knights-of-l.jpg"
+  "local": "assets/img/01-1886-kurz-allison-lithograph-leaders-of-the-knights-of-l.jpg",
+  "w": 963,
+  "h": 1200
  },
  {
   "match_title_fragment": "Procter & Gamble launches the nation's first corporate profit-sharing plan",
@@ -28,9 +32,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cincinnati,%20OH%20-%20Procter%20%26%20Gamble,%20Ivorydale%20Plant%20(4).jpg?width=1000",
   "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
   "author": "Bmzuckerman",
-  "caption": "P&G's Ivorydale plant in Cincinnati, built 1885-86 \u2014 the factory complex where the nation's first corporate profit-sharing plan took root in 1887.",
+  "caption": "P&G's Ivorydale plant in Cincinnati, built 1885-86 — the factory complex where the nation's first corporate profit-sharing plan took root in 1887.",
   "era_decade": "1880",
-  "local": "assets/img/02-procter-gamble-s-ivorydale-plant-in-cincinnati-the-roman.jpg"
+  "local": "assets/img/02-procter-gamble-s-ivorydale-plant-in-cincinnati-the-roman.jpg",
+  "w": 1280,
+  "h": 855
  },
  {
   "match_title_fragment": "The Pullman Strike: a national company-town counterexample to ownership",
@@ -39,9 +45,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pullman%20strikers%20outside%20Arcade%20Building.jpg?width=1000",
   "license": "Public domain (in the United States)",
   "author": "Unknown author; Pullman Company staff photograph, negative jacket labeled 'Fife and Drum Corp'",
-  "caption": "Pullman strikers gather outside the Arcade Building as Illinois National Guard troops stand watch, 1894 \u2014 the company town that became ownership's cautionary tale.",
+  "caption": "Pullman strikers gather outside the Arcade Building as Illinois National Guard troops stand watch, 1894 — the company town that became ownership's cautionary tale.",
   "era_decade": "1890",
-  "local": "assets/img/03-pullman-strikers-gathered-outside-the-arcade-building-in.jpg"
+  "local": "assets/img/03-pullman-strikers-gathered-outside-the-arcade-building-in.jpg",
+  "w": 1280,
+  "h": 951
  },
  {
   "match_title_fragment": "Edward Filene's profit-sharing plan and the Filene Cooperative Association",
@@ -52,7 +60,9 @@
   "author": "Bain News Service, publisher",
   "caption": "Edward A. Filene, whose Boston department store built one of the era's most ambitious profit-sharing and employee-cooperative plans.",
   "era_decade": "1900",
-  "local": "assets/img/04-portrait-photograph-of-edward-a-filene-boston-department.jpg"
+  "local": "assets/img/04-portrait-photograph-of-edward-a-filene-boston-department.jpg",
+  "w": 1280,
+  "h": 1696
  },
  {
   "match_title_fragment": "George Eastman gives Kodak employees a third of his personal stock",
@@ -61,20 +71,24 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/George%20Eastman%20founder%20of%20Eastman%20Kodak%20Company.jpg?width=1000",
   "license": "Public domain (in the United States)",
   "author": "Paul Nadar (1856-1939)",
-  "caption": "George Eastman, photographed in 1890 \u2014 in 1919 he handed Kodak employees a third of his personal stock on top of the company's wage-dividend program.",
+  "caption": "George Eastman, photographed in 1890 — in 1919 he handed Kodak employees a third of his personal stock on top of the company's wage-dividend program.",
   "era_decade": "1890",
-  "local": "assets/img/05-studio-portrait-of-george-eastman-founder-of-eastman-kod.jpg"
+  "local": "assets/img/05-studio-portrait-of-george-eastman-founder-of-eastman-kod.jpg",
+  "w": 765,
+  "h": 1200
  },
  {
   "match_title_fragment": "Sears, Roebuck & Co. launches its profit-sharing/stock plan",
-  "subject": "East front and northeast corner of the Merchandise Building at the Sears, Roebuck & Co. Mail Order Plant, 924 South Homan Avenue, Chicago \u2014 the complex whose workforce the 1916 profit-sharing/stock plan covered",
+  "subject": "East front and northeast corner of the Merchandise Building at the Sears, Roebuck & Co. Mail Order Plant, 924 South Homan Avenue, Chicago — the complex whose workforce the 1916 profit-sharing/stock plan covered",
   "file_page_url": "https://www.loc.gov/item/il0737/",
   "download_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/il/il0700/il0737/photos/048516pv.jpg",
   "license": "No known restrictions on images made by the U.S. Government (HABS/HAER collection)",
   "author": "Historic American Buildings Survey, Library of Congress",
   "caption": "The Merchandise Building at Sears, Roebuck's Chicago Mail Order Plant, the heart of the workforce covered by Sears' pioneering 1916 profit-sharing and stock plan.",
   "era_decade": "1900",
-  "local": "assets/img/06-east-front-and-northeast-corner-of-the-merchandise-build.jpg"
+  "local": "assets/img/06-east-front-and-northeast-corner-of-the-merchandise-build.jpg",
+  "w": 1024,
+  "h": 815
  },
  {
   "match_title_fragment": "Welfare-capitalism era: large-scale employee stock-purchase plans spread across American industry",
@@ -83,20 +97,24 @@
   "download_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a20000/3a20000/3a20500/3a20510r.jpg",
   "license": "No known restrictions on publication",
   "author": "Unknown photographer; Library of Congress Prints and Photographs Division",
-  "caption": "The assembly line inside Ford's Highland Park plant, circa 1913 \u2014 the kind of mass-production floor that 1920s welfare capitalism tried to civilize with stock-purchase and bonus plans.",
+  "caption": "The assembly line inside Ford's Highland Park plant, circa 1913 — the kind of mass-production floor that 1920s welfare capitalism tried to civilize with stock-purchase and bonus plans.",
   "era_decade": "1910",
-  "local": "assets/img/07-workers-at-the-assembly-line-inside-ford-motor-company-s.jpg"
+  "local": "assets/img/07-workers-at-the-assembly-line-inside-ford-motor-company-s.jpg",
+  "w": 640,
+  "h": 515
  },
  {
-  "match_title_fragment": "Green Bay Packers, Inc. \u2014 founding stock sale saves the team",
+  "match_title_fragment": "Green Bay Packers, Inc. — founding stock sale saves the team",
   "subject": "Team photograph of the Green Bay Packers, 1925, two years after the community stock sale that incorporated the team as a nonprofit, fan-owned franchise",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Greenbay_packers_1925_team.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Greenbay%20packers%201925%20team.jpg?width=1000",
   "license": "Public domain (published in the United States before January 1, 1931)",
   "author": "Unknown author",
-  "caption": "The Green Bay Packers, 1925 \u2014 two years after Green Bay's citizens bought stock to incorporate the team and keep it, and its ownership, local.",
+  "caption": "The Green Bay Packers, 1925 — two years after Green Bay's citizens bought stock to incorporate the team and keep it, and its ownership, local.",
   "era_decade": "1920",
-  "local": "assets/img/08-team-photograph-of-the-green-bay-packers-1925-two-years.jpg"
+  "local": "assets/img/08-team-photograph-of-the-green-bay-packers-1925-two-years.jpg",
+  "w": 612,
+  "h": 423
  },
  {
   "match_title_fragment": "Upton Sinclair's EPIC campaign takes worker cooperatives to the national stage",
@@ -107,7 +125,9 @@
   "author": "Los Angeles Times (Los Angeles Times Photographic Collection, UCLA Library)",
   "caption": "Upton Sinclair in 1935, months after his EPIC campaign put Depression-era worker cooperatives on the national political stage.",
   "era_decade": "1930",
-  "local": "assets/img/09-photograph-of-upton-sinclair-author-and-1934-epic-end-po.jpg"
+  "local": "assets/img/09-photograph-of-upton-sinclair-author-and-1934-epic-end-po.jpg",
+  "w": 1196,
+  "h": 1622
  },
  {
   "match_title_fragment": "Depression-era self-help cooperative movement spreads to 1.3 million people",
@@ -116,9 +136,11 @@
   "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8c25000/8c25300/8c25318v.jpg",
   "license": "No known restrictions (Farm Security Administration/Office of War Information Black & White Photographs)",
   "author": "Farm Security Administration, Library of Congress Prints and Photographs Division",
-  "caption": "The self-built office of the Ola, Idaho self-help cooperative \u2014 members sawed the lumber at their own mill, the same self-help cooperative movement that reached 1.3 million Depression-era Americans.",
+  "caption": "The self-built office of the Ola, Idaho self-help cooperative — members sawed the lumber at their own mill, the same self-help cooperative movement that reached 1.3 million Depression-era Americans.",
   "era_decade": "1930",
-  "local": "assets/img/10-the-office-building-of-the-ola-idaho-fsa-self-help-coope.jpg"
+  "local": "assets/img/10-the-office-building-of-the-ola-idaho-fsa-self-help-coope.jpg",
+  "w": 1200,
+  "h": 913
  },
  {
   "match_title_fragment": "",
@@ -127,9 +149,11 @@
   "download_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/51700/51713v.jpg",
   "license": "No known restrictions on publication",
   "author": "Thomas J. O'Halloran, photographer; Library of Congress Prints and Photographs Division",
-  "caption": "Shoppers navigate a self-service supermarket aisle in January 1957 \u2014 the consumer economy that welfare capitalism, ESOPs, and profit-sharing plans were all racing to give workers a stake in.",
+  "caption": "Shoppers navigate a self-service supermarket aisle in January 1957 — the consumer economy that welfare capitalism, ESOPs, and profit-sharing plans were all racing to give workers a stake in.",
   "era_decade": "1950",
-  "local": "assets/img/11-shoppers-in-a-self-service-supermarket-aisle-1957.jpg"
+  "local": "assets/img/11-shoppers-in-a-self-service-supermarket-aisle-1957.jpg",
+  "w": 1024,
+  "h": 694
  },
  {
   "match_title_fragment": "Ford signs ERISA, praises it on the record",
@@ -138,9 +162,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ford_A0491_NLGRF_photo_contact_sheet_(1974-09-02)(Gerald_Ford_Library).jpg?width=1000",
   "license": "Public domain (U.S. federal government work, Title 17 Ch.1 Sec.105)",
   "author": "David Hume Kennerly, White House Photographic Office / Gerald R. Ford Presidential Library (NARA)",
-  "caption": "President Ford signs ERISA into law in the Rose Garden, September 2, 1974 \u2014 the bill that wrote the ESOP into federal statute.",
+  "caption": "President Ford signs ERISA into law in the Rose Garden, September 2, 1974 — the bill that wrote the ESOP into federal statute.",
   "era_decade": "1970",
-  "local": "assets/img/12-president-gerald-ford-signing-erisa-h-r-2-the-pension-re.jpg"
+  "local": "assets/img/12-president-gerald-ford-signing-erisa-h-r-2-the-pension-re.jpg",
+  "w": 928,
+  "h": 1200
  },
  {
   "match_title_fragment": "russell long",
@@ -151,7 +177,9 @@
   "author": "Yoichi Okamoto, White House photographer (LBJ Library)",
   "caption": "Sen. Russell B. Long, the Senate Finance Committee chairman who later drove the ESOP into federal law, meets with President Johnson in the Oval Office, January 1964.",
   "era_decade": "1960",
-  "local": "assets/img/13-sen-russell-b-long-d-la-in-conversation-with-president-l.jpg"
+  "local": "assets/img/13-sen-russell-b-long-d-la-in-conversation-with-president-l.jpg",
+  "w": 1280,
+  "h": 869
  },
  {
   "match_title_fragment": "",
@@ -160,9 +188,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/4-7_Ben_Brown_with_Democratic_National_Committee_Visitos;_8-10_Lunch_with_Senator_Russell_Long;_11-15_Midge_Constanza_meets_with_Puerto_Rican_Coalition_-_DPLA_-_caed45238838f43142bce38e30aab7b4.jpg?width=1000",
   "license": "No Copyright - United States (public domain)",
   "author": "White House Staff Photographers, President (1977-1981: Carter) / National Archives and Records Administration",
-  "caption": "A White House lunch with Sen. Russell Long, March 1978 \u2014 the Louisiana Democrat who spent the decade championing the ESOP.",
+  "caption": "A White House lunch with Sen. Russell Long, March 1978 — the Louisiana Democrat who spent the decade championing the ESOP.",
   "era_decade": "1970",
-  "local": "assets/img/14-white-house-contact-sheet-showing-a-lunch-with-sen-russe.jpg"
+  "local": "assets/img/14-white-house-contact-sheet-showing-a-lunch-with-sen-russe.jpg",
+  "w": 1280,
+  "h": 957
  },
  {
   "match_title_fragment": "",
@@ -173,7 +203,9 @@
   "author": "Photographer Dev O'Neill, Carl Albert Research and Studies Center, Congressional Collection",
   "caption": "Sen. Russell Long with Speaker Carl Albert, Tip O'Neill, and DNC Chairman Robert Strauss at a Democratic leadership dinner, mid-1970s.",
   "era_decade": "1970",
-  "local": "assets/img/15-sen-russell-b-long-with-house-speaker-carl-albert-majori.jpg"
+  "local": "assets/img/15-sen-russell-b-long-with-house-speaker-carl-albert-majori.jpg",
+  "w": 1280,
+  "h": 991
  },
  {
   "match_title_fragment": "",
@@ -184,7 +216,9 @@
   "author": "United States Senate Historical Office",
   "caption": "Official Senate portrait of Sen. Russell B. Long (D-LA), 1960s.",
   "era_decade": "1960",
-  "local": "assets/img/16-official-u-s-senate-portrait-of-sen-russell-b-long-of-lo.jpg"
+  "local": "assets/img/16-official-u-s-senate-portrait-of-sen-russell-b-long-of-lo.jpg",
+  "w": 305,
+  "h": 407
  },
  {
   "match_title_fragment": "A Piece of the Action",
@@ -193,9 +227,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul_A._Samuelson,_economist.jpg?width=1000",
   "license": "Public domain (no known copyright restrictions, Bernard Gotfryd collection, Library of Congress)",
   "author": "Bernard Gotfryd, photographer",
-  "caption": "MIT economist Paul Samuelson, photographed circa 1970-75 \u2014 the Nobel laureate who dismissed Louis Kelso's ownership theory on 60 Minutes' \"A Piece of the Action.\"",
+  "caption": "MIT economist Paul Samuelson, photographed circa 1970-75 — the Nobel laureate who dismissed Louis Kelso's ownership theory on 60 Minutes' \"A Piece of the Action.\"",
   "era_decade": "1970",
-  "local": "assets/img/17-economist-paul-a-samuelson-color-transparency-portrait.jpg"
+  "local": "assets/img/17-economist-paul-a-samuelson-color-transparency-portrait.jpg",
+  "w": 1024,
+  "h": 694
  },
  {
   "match_title_fragment": "",
@@ -204,10 +240,12 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/WTLV_News_Set,_1970s.png?width=1000",
   "license": "Creative Commons Attribution-Share Alike 4.0 International",
   "author": "Florida-Georgia Television Company / Multimedia Holdings Corporation",
-  "caption": "A local TV news studio set, 1975 \u2014 the broadcast world Kelso's ESOP pitch entered when 60 Minutes came calling.",
+  "caption": "A local TV news studio set, 1975 — the broadcast world Kelso's ESOP pitch entered when 60 Minutes came calling.",
   "era_decade": "1970",
   "local": "assets/img/18-a-local-television-news-studio-set-as-it-appeared-in-the.jpg",
-  "chapter": "seventies"
+  "chapter": "seventies",
+  "w": 1200,
+  "h": 699
  },
  {
   "match_title_fragment": "The Working Class Goes to Heaven",
@@ -216,20 +254,24 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Workers_in_Fiat_factories,_Turin.jpg?width=1000",
   "license": "Public domain (Italy; also public domain in the U.S. under URAA)",
   "author": "Unknown author (published in Epoca magazine, No. 69, year XII)",
-  "caption": "Workers on the line at a Fiat plant in Turin, 1961 \u2014 the real Italian industrial floor behind 1970s labor films like The Working Class Goes to Heaven.",
+  "caption": "Workers on the line at a Fiat plant in Turin, 1961 — the real Italian industrial floor behind 1970s labor films like The Working Class Goes to Heaven.",
   "era_decade": "1960",
-  "local": "assets/img/19-assembly-line-workers-on-the-factory-floor-at-a-fiat-pla.jpg"
+  "local": "assets/img/19-assembly-line-workers-on-the-factory-floor-at-a-fiat-pla.jpg",
+  "w": 950,
+  "h": 908
  },
  {
   "match_title_fragment": "South Bend Lathe's employee buyout",
-  "subject": "The historic 1868 Singer Manufacturing\u2013South Bend Lathe Co. factory building in South Bend, Indiana",
+  "subject": "The historic 1868 Singer Manufacturing–South Bend Lathe Co. factory building in South Bend, Indiana",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Singer_manufacturing_facility_in_South_Bend.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Singer_manufacturing_facility_in_South_Bend.jpg?width=1000",
   "license": "CC0 (released into the public domain by the copyright holder)",
   "author": "Nyttend",
-  "caption": "The 1868 South Bend, Indiana factory building where 500 workers used an ESOP to buy out South Bend Lathe in 1975 \u2014 TIME's 1976 'More Worker-Owners' story.",
+  "caption": "The 1868 South Bend, Indiana factory building where 500 workers used an ESOP to buy out South Bend Lathe in 1975 — TIME's 1976 'More Worker-Owners' story.",
   "era_decade": "1970",
-  "local": "assets/img/20-the-historic-1868-singer-manufacturing-south-bend-lathe.jpg"
+  "local": "assets/img/20-the-historic-1868-singer-manufacturing-south-bend-lathe.jpg",
+  "w": 1280,
+  "h": 720
  },
  {
   "match_title_fragment": "Enron collapse",
@@ -240,7 +282,9 @@
   "author": "Alex (Flickr user 23094783@N03)",
   "caption": "Enron's Houston headquarters, the symbol of the 401(k) wipeout that scrambled America's understanding of \"employee ownership.\"",
   "era_decade": "2000",
-  "local": "assets/img/21-enron-s-downtown-houston-headquarters-complex-the-glass.jpg"
+  "local": "assets/img/21-enron-s-downtown-houston-headquarters-complex-the-glass.jpg",
+  "w": 1280,
+  "h": 853
  },
  {
   "match_title_fragment": "Sam Zell's $8.2B ESOP buyout of Tribune Company",
@@ -249,9 +293,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tribune%20Tower,%20Chicago,%20Illinois.jpg?width=1000",
   "license": "Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0)",
   "author": "Spatms",
-  "caption": "Tribune Tower, Chicago \u2014 the newsroom Sam Zell bought with an ESOP, and bankrupted a year later.",
+  "caption": "Tribune Tower, Chicago — the newsroom Sam Zell bought with an ESOP, and bankrupted a year later.",
   "era_decade": "2000",
-  "local": "assets/img/22-tribune-tower-in-downtown-chicago-headquarters-of-the-tr.jpg"
+  "local": "assets/img/22-tribune-tower-in-downtown-chicago-headquarters-of-the-tr.jpg",
+  "w": 1280,
+  "h": 960
  },
  {
   "match_title_fragment": "Ex-LA Times journalists' ESOP lawsuit against Zell's Tribune",
@@ -260,9 +306,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sam%20Zell.jpg?width=1000",
   "license": "Creative Commons Attribution 3.0 Unported (CC BY 3.0)",
   "author": "TheStreet",
-  "caption": "Sam Zell, whose Tribune ESOP deal ended in bankruptcy \u2014 and a $32 million settlement with the employees it was built on.",
+  "caption": "Sam Zell, whose Tribune ESOP deal ended in bankruptcy — and a $32 million settlement with the employees it was built on.",
   "era_decade": "2000",
-  "local": "assets/img/23-sam-zell-the-real-estate-billionaire-who-financed-his-tr.jpg"
+  "local": "assets/img/23-sam-zell-the-real-estate-billionaire-who-financed-his-tr.jpg",
+  "w": 1280,
+  "h": 720
  },
  {
   "match_title_fragment": "Bob Moore gives Bob's Red Mill to his employees",
@@ -271,9 +319,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bob%20Moore%202012.jpg?width=1000",
   "license": "Creative Commons Attribution-Share Alike 2.0 Generic (CC BY-SA 2.0)",
   "author": "Oregon State University (photo credited to Adam Bacher)",
-  "caption": "Bob Moore at Bob's Red Mill \u2014 on his 81st birthday he handed the whole company to its employees.",
+  "caption": "Bob Moore at Bob's Red Mill — on his 81st birthday he handed the whole company to its employees.",
   "era_decade": "2010",
-  "local": "assets/img/24-bob-moore-founder-of-bob-s-red-mill-photographed-in-fron.jpg"
+  "local": "assets/img/24-bob-moore-founder-of-bob-s-red-mill-photographed-in-fron.jpg",
+  "w": 824,
+  "h": 1200
  },
  {
   "match_title_fragment": "Hamdi Ulukaya hands ~10% of Chobani",
@@ -284,7 +334,9 @@
   "author": "Chobani",
   "caption": "Hamdi Ulukaya, who gave roughly 2,000 Chobani employees a stake worth up to 10% of the company.",
   "era_decade": "2010",
-  "local": "assets/img/25-hamdi-ulukaya-founder-and-ceo-of-chobani-in-an-outdoor-p.jpg"
+  "local": "assets/img/25-hamdi-ulukaya-founder-and-ceo-of-chobani-in-an-outdoor-p.jpg",
+  "w": 1279,
+  "h": 1490
  },
  {
   "match_title_fragment": "New Belgium Brewing completes 100% employee ownership",
@@ -293,9 +345,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/New%20Belgium%20Brewing,%20Asheville,%20NC%202017.jpg?width=1000",
   "license": "Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0)",
   "author": "Timothyjosephwood",
-  "caption": "New Belgium Brewing, 100% employee-owned via ESOP \u2014 a stake that later paid out roughly $200 million to its worker-owners.",
+  "caption": "New Belgium Brewing, 100% employee-owned via ESOP — a stake that later paid out roughly $200 million to its worker-owners.",
   "era_decade": "2010",
-  "local": "assets/img/26-new-belgium-brewing-s-asheville-north-carolina-facility.jpg"
+  "local": "assets/img/26-new-belgium-brewing-s-asheville-north-carolina-facility.jpg",
+  "w": 1280,
+  "h": 720
  },
  {
   "match_title_fragment": "employees bought out the founding family",
@@ -306,7 +360,9 @@
   "author": "Robert Couse-Baker",
   "caption": "WinCo Foods, where employees bought out the founding family and \"millionaire grocery clerks\" became folklore.",
   "era_decade": "2010",
-  "local": "assets/img/27-a-winco-foods-grocery-store-at-sunset.jpg"
+  "local": "assets/img/27-a-winco-foods-grocery-store-at-sunset.jpg",
+  "w": 1280,
+  "h": 993
  },
  {
   "match_title_fragment": "the largest ESOP in America",
@@ -317,7 +373,9 @@
   "author": "Mike Kalasnik, Fort Mill, USA",
   "caption": "Inside a Publix, the largest majority employee-owned company in America.",
   "era_decade": "2010",
-  "local": "assets/img/28-interior-of-a-publix-supermarket.jpg"
+  "local": "assets/img/28-interior-of-a-publix-supermarket.jpg",
+  "w": 1280,
+  "h": 747
  },
  {
   "match_title_fragment": "ESOP since 1996",
@@ -326,9 +384,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Inside%20the%20King%20Arthur%20Baking%20Company%20store.jpg?width=1000",
   "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
   "author": "Kenneth C. Zirkel",
-  "caption": "King Arthur Baking's Vermont retail store \u2014 100% employee-owned since 1996.",
+  "caption": "King Arthur Baking's Vermont retail store — 100% employee-owned since 1996.",
   "era_decade": "2010",
-  "local": "assets/img/29-interior-of-the-king-arthur-baking-company-retail-store.jpg"
+  "local": "assets/img/29-interior-of-the-king-arthur-baking-company-retail-store.jpg",
+  "w": 1280,
+  "h": 760
  },
  {
   "match_title_fragment": "Elizabeth Warren introduces the Accountable Capitalism Act",
@@ -339,7 +399,9 @@
   "author": "Office of Senator Elizabeth Warren",
   "caption": "Senator Elizabeth Warren, whose Accountable Capitalism Act put worker ownership into a Senate bill.",
   "era_decade": "2010",
-  "local": "assets/img/30-senator-elizabeth-warren-official-senate-portrait.jpg"
+  "local": "assets/img/30-senator-elizabeth-warren-official-senate-portrait.jpg",
+  "w": 1280,
+  "h": 850
  },
  {
   "match_title_fragment": "Bernie Sanders backs a national inclusive-ownership plan",
@@ -348,20 +410,24 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bernie%20Sanders%20Vermont%20Worker%20Rights%20Board.jpg?width=1000",
   "license": "Public domain (U.S. Congress work)",
   "author": "Office of Sen. Bernie Sanders",
-  "caption": "Bernie Sanders chairing a Vermont worker rights hearing \u2014 the same instinct that later became his inclusive-ownership plan.",
+  "caption": "Bernie Sanders chairing a Vermont worker rights hearing — the same instinct that later became his inclusive-ownership plan.",
   "era_decade": "2000",
-  "local": "assets/img/31-bernie-sanders-chairing-a-worker-rights-hearing-at-burli.jpg"
+  "local": "assets/img/31-bernie-sanders-chairing-a-worker-rights-hearing-at-burli.jpg",
+  "w": 520,
+  "h": 390
  },
  {
   "match_title_fragment": "the world's largest worker cooperative",
-  "subject": "Central headquarters building of the Mondragon Corporation in Arrasate/Mondrag\u00f3n, Basque Country, Spain",
+  "subject": "Central headquarters building of the Mondragon Corporation in Arrasate/Mondragón, Basque Country, Spain",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Mondrag%C3%B3n_-_Sede_Central_de_la_Corporaci%C3%B3n_Mondrag%C3%B3n.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mondrag%C3%B3n%20-%20Sede%20Central%20de%20la%20Corporaci%C3%B3n%20Mondrag%C3%B3n.jpg?width=1000",
   "license": "Creative Commons CC0 1.0 Universal Public Domain Dedication",
   "author": "Zarateman",
-  "caption": "Mondragon Corporation's headquarters in the Basque Country \u2014 the world's largest worker cooperative.",
+  "caption": "Mondragon Corporation's headquarters in the Basque Country — the world's largest worker cooperative.",
   "era_decade": "2010",
-  "local": "assets/img/32-central-headquarters-building-of-the-mondragon-corporati.jpg"
+  "local": "assets/img/32-central-headquarters-building-of-the-mondragon-corporati.jpg",
+  "w": 1280,
+  "h": 894
  },
  {
   "match_title_fragment": "The 2013 Fagor collapse inside Mondragon",
@@ -369,10 +435,12 @@
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Viaje_a_la_Corporaci%C3%B3n_Mondrag%C3%B3n_en_el_Pa%C3%ADs_Vasco.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Viaje%20a%20la%20Corporaci%C3%B3n%20Mondrag%C3%B3n%20en%20el%20Pa%C3%ADs%20Vasco.jpg?width=1000",
   "license": "Creative Commons Attribution 2.0 Generic (CC BY 2.0)",
-  "author": "Colaborativa dot eu (C\u00f3rdoba, Spain)",
+  "author": "Colaborativa dot eu (Córdoba, Spain)",
   "caption": "A 2012 visitor tour of Mondragon's cooperative network, including the Fagor factory that collapsed the following year.",
   "era_decade": "2010",
-  "local": "assets/img/33-a-visiting-group-touring-mondragon-corporation-facilitie.jpg"
+  "local": "assets/img/33-a-visiting-group-touring-mondragon-corporation-facilitie.jpg",
+  "w": 1280,
+  "h": 720
  },
  {
   "match_title_fragment": "partners vote to stay owners",
@@ -381,9 +449,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Lewis%20department%20store,%20Oxford%20Street%20-%20geograph.org.uk%20-%205141020.jpg?width=1000",
   "license": "Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0)",
   "author": "Jim Osley",
-  "caption": "John Lewis on Oxford Street \u2014 where partners voted in 1999 to stay employee-owners rather than float on the stock market.",
+  "caption": "John Lewis on Oxford Street — where partners voted in 1999 to stay employee-owners rather than float on the stock market.",
   "era_decade": "2010",
-  "local": "assets/img/34-the-john-lewis-department-store-exterior-on-oxford-stree.jpg"
+  "local": "assets/img/34-the-john-lewis-department-store-exterior-on-oxford-stree.jpg",
+  "w": 1200,
+  "h": 1157
  },
  {
   "match_title_fragment": "Patagonia's Yvon Chouinard gives company to the planet",
@@ -394,7 +464,9 @@
   "author": "Tony Webster",
   "caption": "A Patagonia storefront, the outdoor brand Yvon Chouinard gave away to a purpose trust in 2022.",
   "era_decade": "2020",
-  "local": "assets/img/35-patagonia-retail-storefront-and-street-facing-facade-old.jpg"
+  "local": "assets/img/35-patagonia-retail-storefront-and-street-facing-facade-old.jpg",
+  "w": 1280,
+  "h": 810
  },
  {
   "match_title_fragment": "Taylor Guitars becomes 100% employee-owned",
@@ -405,7 +477,9 @@
   "author": "Marcin Wichary",
   "caption": "Inside the Taylor Guitars factory floor, now 100% owned by the people who build the instruments.",
   "era_decade": "2020",
-  "local": "assets/img/36-guitar-on-display-at-the-taylor-guitars-factory-el-cajon.jpg"
+  "local": "assets/img/36-guitar-on-display-at-the-taylor-guitars-factory-el-cajon.jpg",
+  "w": 1280,
+  "h": 1280
  },
  {
   "match_title_fragment": "John Lewis Partnership Bonus",
@@ -416,7 +490,9 @@
   "author": "Amanda Slater",
   "caption": "The John Lewis Partnership's flagship Oxford Street store, where the annual staff bonus became a recurring news story.",
   "era_decade": "2020",
-  "local": "assets/img/37-john-lewis-department-store-storefront-on-oxford-street.jpg"
+  "local": "assets/img/37-john-lewis-department-store-storefront-on-oxford-street.jpg",
+  "w": 1280,
+  "h": 914
  },
  {
   "match_title_fragment": "Bipartisan Employee Equity Investment Act introduced in both chambers of Congress",
@@ -427,7 +503,9 @@
   "author": "Architect of the Capitol",
   "caption": "The U.S. Capitol, where bipartisan employee-ownership bills have repeatedly landed in Congress this decade.",
   "era_decade": "2020",
-  "local": "assets/img/38-west-front-of-the-united-states-capitol-washington-d-c.jpg"
+  "local": "assets/img/38-west-front-of-the-united-states-capitol-washington-d-c.jpg",
+  "w": 1280,
+  "h": 664
  },
  {
   "match_title_fragment": "NPR Planet Money profiles Pete Stavros's employee-ownership experiment",
@@ -438,7 +516,9 @@
   "author": "Ted Eytan",
   "caption": "NPR's Washington headquarters, home of the Planet Money team that profiled KKR's Pete Stavros in 2026.",
   "era_decade": "2020",
-  "local": "assets/img/39-exterior-of-npr-s-national-headquarters-building-washing.jpg"
+  "local": "assets/img/39-exterior-of-npr-s-national-headquarters-building-washing.jpg",
+  "w": 1280,
+  "h": 725
  },
  {
   "match_title_fragment": "WinCo Foods and Publix become viral 'shop employee-owned' social-media talking points",
@@ -449,7 +529,9 @@
   "author": "M.O. Stevens",
   "caption": "A WinCo Foods storefront -- the employee-owned grocer that became a viral 'shop here' talking point.",
   "era_decade": "2020",
-  "local": "assets/img/40-winco-foods-supermarket-exterior-hillsboro-oregon.jpg"
+  "local": "assets/img/40-winco-foods-supermarket-exterior-hillsboro-oregon.jpg",
+  "w": 1280,
+  "h": 1089
  },
  {
   "match_title_fragment": "'Publix Millionaire'",
@@ -460,7 +542,9 @@
   "author": "Phillip Pessar",
   "caption": "A Publix storefront lit up at night -- the grocery chain behind the 'Publix Millionaire' social-media trend.",
   "era_decade": "2020",
-  "local": "assets/img/41-publix-supermarket-storefront-at-night-west-miami-florid.jpg"
+  "local": "assets/img/41-publix-supermarket-storefront-at-night-west-miami-florid.jpg",
+  "w": 1280,
+  "h": 960
  },
  {
   "match_title_fragment": "Tim Scott's Employee Ownership Fairness Act",
@@ -471,7 +555,9 @@
   "author": "United States Senate",
   "caption": "Sen. Tim Scott, whose 2025 Employee Ownership Fairness Act drew floor remarks from Bernie Sanders.",
   "era_decade": "2020",
-  "local": "assets/img/46-official-u-s-senate-portrait-of-senator-tim-scott-of-sou.jpg"
+  "local": "assets/img/46-official-u-s-senate-portrait-of-senator-tim-scott-of-sou.jpg",
+  "w": 586,
+  "h": 773
  },
  {
   "match_title_fragment": "",
@@ -482,29 +568,35 @@
   "author": "Kaila Colbin",
   "caption": "A TED2025 speaker on stage in Vancouver -- era-mood shot for the decade's big-idea-conference discourse on AI and ownership.",
   "era_decade": "2020",
-  "local": "assets/img/48-speaker-latif-nasser-on-stage-at-ted2025-vancouver.jpg"
+  "local": "assets/img/48-speaker-latif-nasser-on-stage-at-ted2025-vancouver.jpg",
+  "w": 1280,
+  "h": 1466
  },
  {
   "match_title_fragment": "founding stock sale saves the team",
-  "subject": "The 1919 Green Bay Packers football team posed outside the Indian Packing Company building in Green Bay, Wisconsin \u2014 the earliest incarnation of the franchise, four years before its 1923 fan-ownership stock sale.",
+  "subject": "The 1919 Green Bay Packers football team posed outside the Indian Packing Company building in Green Bay, Wisconsin — the earliest incarnation of the franchise, four years before its 1923 fan-ownership stock sale.",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:The_1919_Green_Bay_Packers.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_1919_Green_Bay_Packers.jpg?width=1000",
-  "license": "Public domain \u2014 \"in the public domain in the United States because it was published in the United States between 1931 and 1977, inclusive, without a copyright notice\"",
+  "license": "Public domain — \"in the public domain in the United States because it was published in the United States between 1931 and 1977, inclusive, without a copyright notice\"",
   "author": "Unknown photographer; photo ownership attributed to the Green Bay Packers by team historian Cliff Christl",
-  "caption": "The 1919 Green Bay Packers, posed outside the Indian Packing Company plant \u2014 four years before fans bought the team.",
+  "caption": "The 1919 Green Bay Packers, posed outside the Indian Packing Company plant — four years before fans bought the team.",
   "era_decade": "",
-  "local": "assets/img/49-the-1919-green-bay-packers-football-team-posed-outside-t.jpg"
+  "local": "assets/img/49-the-1919-green-bay-packers-football-team-posed-outside-t.jpg",
+  "w": 967,
+  "h": 537
  },
  {
-  "match_title_fragment": "Packers' fifth stock sale \u2014 first in 14 years \u2014 funds Lambeau expansion",
-  "subject": "Lambeau Field, Green Bay, Wisconsin, during a December 2016 game against the Seattle Seahawks \u2014 the stadium whose expansions have repeatedly been funded by Packers stock sales to fans.",
+  "match_title_fragment": "Packers' fifth stock sale — first in 14 years — funds Lambeau expansion",
+  "subject": "Lambeau Field, Green Bay, Wisconsin, during a December 2016 game against the Seattle Seahawks — the stadium whose expansions have repeatedly been funded by Packers stock sales to fans.",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Lambeau_Field_in_December_2016_during_a_game_versus_the_Seattle_Seahawks.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lambeau_Field_in_December_2016_during_a_game_versus_the_Seattle_Seahawks.jpg?width=1000",
   "license": "Creative Commons CC0 1.0 Universal Public Domain Dedication",
   "author": "Mtyson84",
-  "caption": "Lambeau Field \u2014 the stadium fans have literally bought shares to expand.",
+  "caption": "Lambeau Field — the stadium fans have literally bought shares to expand.",
   "era_decade": "",
-  "local": "assets/img/50-lambeau-field-green-bay-wisconsin-during-a-december-2016.jpg"
+  "local": "assets/img/50-lambeau-field-green-bay-wisconsin-during-a-december-2016.jpg",
+  "w": 1280,
+  "h": 446
  },
  {
   "match_title_fragment": "The Dispossessed (Ursula K. Le Guin)",
@@ -515,10 +607,12 @@
   "author": "Gorthian",
   "caption": "Ursula K. Le Guin, whose 1974 novel The Dispossessed imagined a propertyless anarchist economy.",
   "era_decade": "",
-  "local": "assets/img/51-author-ursula-k-le-guin-reading-from-her-novel-lavinia-a.jpg"
+  "local": "assets/img/51-author-ursula-k-le-guin-reading-from-her-novel-lavinia-a.jpg",
+  "w": 900,
+  "h": 1200
  },
  {
-  "match_title_fragment": "The Ministry for the Future (Kim Stanley Robinson) \u2014 the Mondragon chapter",
+  "match_title_fragment": "The Ministry for the Future (Kim Stanley Robinson) — the Mondragon chapter",
   "subject": "Science-fiction author Kim Stanley Robinson speaking at an event in Phoenix, Arizona, September 20, 2017.",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Kim_Stanley_Robinson_by_Gage_Skidmore_2.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kim_Stanley_Robinson_by_Gage_Skidmore_2.jpg?width=1000",
@@ -526,32 +620,38 @@
   "author": "Gage Skidmore",
   "caption": "Kim Stanley Robinson, whose novel The Ministry for the Future devotes a chapter to Mondragon's worker cooperatives.",
   "era_decade": "",
-  "local": "assets/img/52-science-fiction-author-kim-stanley-robinson-speaking-at.jpg"
+  "local": "assets/img/52-science-fiction-author-kim-stanley-robinson-speaking-at.jpg",
+  "w": 1280,
+  "h": 1336
  },
  {
-  "match_title_fragment": "Wall Street \u2014 the Bluestar Airlines union buyout plot",
-  "subject": "Director Oliver Stone at the 60th San Sebasti\u00e1n International Film Festival, September 23, 2012.",
+  "match_title_fragment": "Wall Street — the Bluestar Airlines union buyout plot",
+  "subject": "Director Oliver Stone at the 60th San Sebastián International Film Festival, September 23, 2012.",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:OliverStone.JPG",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/OliverStone.JPG?width=1000",
   "license": "Creative Commons Attribution 3.0 Unported (CC BY 3.0)",
   "author": "Lyrape",
   "caption": "Oliver Stone, whose 1987 Wall Street ends with a union-backed employee buyout of the airline Gordon Gekko tried to strip.",
   "era_decade": "",
-  "local": "assets/img/53-director-oliver-stone-at-the-60th-san-sebasti-n-internat.jpg"
+  "local": "assets/img/53-director-oliver-stone-at-the-60th-san-sebasti-n-internat.jpg",
+  "w": 1280,
+  "h": 960
  },
  {
-  "match_title_fragment": "Other People's Money \u2014 the New England Wire & Cable buyback",
+  "match_title_fragment": "Other People's Money — the New England Wire & Cable buyback",
   "subject": "A personal snapshot of actor Danny DeVito with twin sisters Jennie Frankel and her sibling, early 1980s.",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Danny_DeVito_early_1980s.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Danny_DeVito_early_1980s.jpg?width=1000",
   "license": "Creative Commons CC0 1.0 Universal Public Domain Dedication",
   "author": "TwinsofSedona",
-  "caption": "Danny DeVito, who played corporate raider 'Larry the Liquidator' in Other People's Money \u2014 the rare Hollywood takeover film that ends with workers buying the company back.",
+  "caption": "Danny DeVito, who played corporate raider 'Larry the Liquidator' in Other People's Money — the rare Hollywood takeover film that ends with workers buying the company back.",
   "era_decade": "",
-  "local": "assets/img/54-a-personal-snapshot-of-actor-danny-devito-with-twin-sist.jpg"
+  "local": "assets/img/54-a-personal-snapshot-of-actor-danny-devito-with-twin-sist.jpg",
+  "w": 215,
+  "h": 413
  },
  {
-  "match_title_fragment": "Last Week Tonight \u2014 Mobile Homes (private equity segment)",
+  "match_title_fragment": "Last Week Tonight — Mobile Homes (private equity segment)",
   "subject": "Comedian and Last Week Tonight host John Oliver at the Montclair Film Festival, November 19, 2016.",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:John_Oliver_November_2016.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/John_Oliver_November_2016.jpg?width=1000",
@@ -559,10 +659,12 @@
   "author": "Neil Grabowsky / Montclair Film Festival",
   "caption": "John Oliver, whose Last Week Tonight segment on private-equity-owned mobile home parks pointed to resident-owned communities as a real alternative.",
   "era_decade": "",
-  "local": "assets/img/55-comedian-and-last-week-tonight-host-john-oliver-at-the-m.jpg"
+  "local": "assets/img/55-comedian-and-last-week-tonight-host-john-oliver-at-the-m.jpg",
+  "w": 1280,
+  "h": 1795
  },
  {
-  "match_title_fragment": "\"9 to 5\" \u2014 Dolly Parton",
+  "match_title_fragment": "\"9 to 5\" — Dolly Parton",
   "subject": "Dolly Parton at the National Press Club, Washington, D.C., March 23, 2000.",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Dolly_Parton_2000.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dolly_Parton_2000.jpg?width=1000",
@@ -570,29 +672,35 @@
   "author": "John Mathew Smith / www.celebrity-photos.com (Kingkongphoto)",
   "caption": "Dolly Parton, whose 1980 anthem '9 to 5' became the unofficial theme song of fair treatment at work.",
   "era_decade": "",
-  "local": "assets/img/56-dolly-parton-at-the-national-press-club-washington-d-c-m.jpg"
+  "local": "assets/img/56-dolly-parton-at-the-national-press-club-washington-d-c-m.jpg",
+  "w": 876,
+  "h": 1200
  },
  {
   "match_title_fragment": "Republic Windows and Doors occupation featured in Michael Moore's Capitalism: A Love Story",
-  "subject": "Filmmaker Michael Moore at the 66th Venice International Film Festival, September 6, 2009 \u2014 the same day Capitalism: A Love Story premiered there.",
+  "subject": "Filmmaker Michael Moore at the 66th Venice International Film Festival, September 6, 2009 — the same day Capitalism: A Love Story premiered there.",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Michael_Moore_66%C3%A8me_Festival_de_Venise_(Mostra)_color.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Moore_66%C3%A8me_Festival_de_Venise_(Mostra)_color.jpg?width=1000",
   "license": "Creative Commons Attribution-Share Alike 2.0 Generic (CC BY-SA 2.0)",
   "author": "nicolas genin",
   "caption": "Michael Moore at the Venice premiere of Capitalism: A Love Story, which put the Republic Windows factory occupation on movie screens.",
   "era_decade": "",
-  "local": "assets/img/57-filmmaker-michael-moore-at-the-66th-venice-international.jpg"
+  "local": "assets/img/57-filmmaker-michael-moore-at-the-66th-venice-international.jpg",
+  "w": 1280,
+  "h": 852
  },
  {
   "match_title_fragment": "",
   "subject": "The Regal Theater and Savoy Ballroom marquee, South Side, Chicago, Illinois, April 1941.",
   "file_page_url": "https://www.loc.gov/item/2017788750/",
   "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8c00000/8c00600/8c00649v.jpg",
-  "license": "No known restrictions (Farm Security Administration/Office of War Information Black & White Photograph collection) \u2014 Rights Advisory: \"No known restrictions\"",
+  "license": "No known restrictions (Farm Security Administration/Office of War Information Black & White Photograph collection) — Rights Advisory: \"No known restrictions\"",
   "author": "Russell Lee, photographer",
-  "caption": "The Regal Theater marquee on Chicago's South Side, 1941 \u2014 the movie-palace era that gave American pop culture its first mass audience.",
+  "caption": "The Regal Theater marquee on Chicago's South Side, 1941 — the movie-palace era that gave American pop culture its first mass audience.",
   "era_decade": "1940",
-  "local": "assets/img/58-the-regal-theater-and-savoy-ballroom-marquee-south-side.jpg"
+  "local": "assets/img/58-the-regal-theater-and-savoy-ballroom-marquee-south-side.jpg",
+  "w": 1024,
+  "h": 787
  },
  {
   "match_title_fragment": "",
@@ -601,9 +709,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hollywood_sign_hill_view.jpg?width=1000",
   "license": "Creative Commons CC0 1.0 Universal Public Domain Dedication",
   "author": "Caleb George (Unsplash: seemoris)",
-  "caption": "The Hollywood Sign \u2014 shorthand for the studio system that employee-ownership stories keep pushing back against.",
+  "caption": "The Hollywood Sign — shorthand for the studio system that employee-ownership stories keep pushing back against.",
   "era_decade": "2010",
-  "local": "assets/img/59-the-hollywood-sign-viewed-from-the-hillside-above-los-an.jpg"
+  "local": "assets/img/59-the-hollywood-sign-viewed-from-the-hillside-above-los-an.jpg",
+  "w": 1280,
+  "h": 552
  },
  {
   "match_title_fragment": "",
@@ -612,9 +722,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Studio_microphone_with_pop-shield_crop.jpg?width=1000",
   "license": "Creative Commons Attribution-Share Alike 3.0 Unported (CC BY-SA 3.0), dual-licensed with GFDL 1.2+",
   "author": "Galak76",
-  "caption": "A studio microphone \u2014 the tool every podcast making the case for employee ownership depends on.",
+  "caption": "A studio microphone — the tool every podcast making the case for employee ownership depends on.",
   "era_decade": "2000",
-  "local": "assets/img/60-a-studio-condenser-microphone-with-pop-shield.jpg"
+  "local": "assets/img/60-a-studio-condenser-microphone-with-pop-shield.jpg",
+  "w": 845,
+  "h": 1095
  },
  {
   "match_title_fragment": "",
@@ -623,32 +735,38 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Touten-Bookstore-1.jpg?width=1000",
   "license": "Creative Commons CC0 1.0 Universal Public Domain Dedication",
   "author": "Evelyn-rose",
-  "caption": "Bookstore shelves \u2014 where novels like The Dispossessed and The Ministry for the Future first reached readers.",
+  "caption": "Bookstore shelves — where novels like The Dispossessed and The Ministry for the Future first reached readers.",
   "era_decade": "2020",
-  "local": "assets/img/61-interior-shelves-of-touten-bookstore-atsuta-ku-nagoya-ja.jpg"
+  "local": "assets/img/61-interior-shelves-of-touten-bookstore-atsuta-ku-nagoya-ja.jpg",
+  "w": 900,
+  "h": 1200
  },
  {
   "match_title_fragment": "",
   "subject": "A family gathered around a console television set in their living room, USA, 1958",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Family_watching_television_1958.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Family%20watching%20television%201958.jpg?width=1000",
-  "license": "Public domain (U.S. federal government work, 17 U.S.C. \u00a7 105)",
+  "license": "Public domain (U.S. federal government work, 17 U.S.C. § 105)",
   "author": "Evert F. Baumgardner",
   "caption": "A family gathered around the television set, 1958.",
   "era_decade": "1950",
   "local": "assets/img/64-a-family-gathered-around-a-console-television-set-in-the.jpg",
-  "chapter": "fifties-sixties"
+  "chapter": "fifties-sixties",
+  "w": 1280,
+  "h": 1255
  },
  {
   "match_title_fragment": "publix",
-  "subject": "Interior of a Piggly Wiggly store showing the entrance turnstile and check-out counter with cash registers \u2014 the first self-service grocery store in the U.S., Memphis, Tennessee, c. 1917",
+  "subject": "Interior of a Piggly Wiggly store showing the entrance turnstile and check-out counter with cash registers — the first self-service grocery store in the U.S., Memphis, Tennessee, c. 1917",
   "file_page_url": "https://www.loc.gov/item/2004676518/",
   "download_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3b00000/3b03000/3b03300/3b03349r.jpg",
   "license": "No known restrictions on publication.",
   "author": "Photo by Clifford H. Poland (copyrighted by Clarence Saunders); Library of Congress Prints and Photographs Division",
   "caption": "The checkout counter at a Piggly Wiggly, America's first self-service grocery store, c. 1917.",
   "era_decade": "1910",
-  "local": "assets/img/73-interior-of-a-piggly-wiggly-store-showing-the-entrance-t.jpg"
+  "local": "assets/img/73-interior-of-a-piggly-wiggly-store-showing-the-entrance-t.jpg",
+  "w": 640,
+  "h": 513
  },
  {
   "match_title_fragment": "",
@@ -660,7 +778,9 @@
   "caption": "A young newsboy hawking papers on the streets of Utica, New York, 1910.",
   "era_decade": "1910",
   "local": "assets/img/74-newsboys-selling-papers-on-the-street-utica-new-york-feb.jpg",
-  "chapter": "prologue"
+  "chapter": "prologue",
+  "w": 1024,
+  "h": 797
  },
  {
   "match_title_fragment": "Weirton Steel becomes the largest 100%-employee-owned company in the U.S.",
@@ -669,18 +789,22 @@
   "download_url": "https://tile.loc.gov/image-services/iiif/service:pnp:highsm:31900:31915/full/pct:25/0/default.jpg",
   "license": "No known restrictions on publication.",
   "author": "Carol M. Highsmith",
-  "caption": "The Weirton, West Virginia mill \u2014 once the largest 100%-employee-owned company in America.",
-  "local": "assets/img/n00-the-former-weirton-steel-isg-weirton-steel-tin-plate-mil.jpg"
+  "caption": "The Weirton, West Virginia mill — once the largest 100%-employee-owned company in America.",
+  "local": "assets/img/n00-the-former-weirton-steel-isg-weirton-steel-tin-plate-mil.jpg",
+  "w": 1200,
+  "h": 801
  },
  {
-  "match_title_fragment": "Fortune: 'Town Bids to Save Itself' \u2014 Weirton's buyout campaign",
+  "match_title_fragment": "Fortune: 'Town Bids to Save Itself' — Weirton's buyout campaign",
   "subject": "The Weirton, West Virginia steel plant along the Ohio River, viewed from the Ohio side",
   "file_page_url": "https://www.loc.gov/item/2015632006/",
   "download_url": "https://tile.loc.gov/image-services/iiif/service:pnp:highsm:31900:31931/full/pct:25/0/default.jpg",
   "license": "No known restrictions on publication.",
   "author": "Carol M. Highsmith",
-  "caption": "The Weirton steel plant on the Ohio River \u2014 the mill a whole company town mortgaged its future to save.",
-  "local": "assets/img/n01-the-weirton-west-virginia-steel-plant-along-the-ohio-riv.jpg"
+  "caption": "The Weirton steel plant on the Ohio River — the mill a whole company town mortgaged its future to save.",
+  "local": "assets/img/n01-the-weirton-west-virginia-steel-plant-along-the-ohio-riv.jpg",
+  "w": 1840,
+  "h": 1228
  },
  {
   "match_title_fragment": "",
@@ -690,8 +814,10 @@
   "download_url": "https://tile.loc.gov/storage-services/service/pnp/mrg/04600/04646v.jpg",
   "license": "No known restrictions on publication.",
   "author": "John Margolies",
-  "caption": "A small-town Missouri grocery store, 1982 \u2014 the ordinary Main Street storefronts these ownership fights were about.",
-  "local": "assets/img/n02-a-small-town-grocery-store-in-rock-port-missouri-1982.jpg"
+  "caption": "A small-town Missouri grocery store, 1982 — the ordinary Main Street storefronts these ownership fights were about.",
+  "local": "assets/img/n02-a-small-town-grocery-store-in-rock-port-missouri-1982.jpg",
+  "w": 710,
+  "h": 1024
  },
  {
   "match_title_fragment": "Rath Packing workers take control of the company via employee ownership",
@@ -701,7 +827,9 @@
   "license": "Public domain (work of a National Park Service employee, Historic American Buildings Survey)",
   "author": "Jerry Mathiason",
   "caption": "Rath Packing's Waterloo, Iowa headquarters, where workers took control of the company in 1980.",
-  "local": "assets/img/n03-the-rath-packing-company-administration-building-in-wate.jpg"
+  "local": "assets/img/n03-the-rath-packing-company-administration-building-in-wate.jpg",
+  "w": 1280,
+  "h": 1006
  },
  {
   "match_title_fragment": "United rebrands itself around employee-owners: 'Come fly OUR friendly skies'",
@@ -711,8 +839,10 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20Airlines%20Boeing%20747-200,%20San%20Francisco,%201990.jpg?width=1000",
   "license": "Creative Commons Attribution 2.0 Generic",
   "author": "Phillip Capper",
-  "caption": "A United Airlines 747 in San Francisco, 1990 \u2014 four years before employees became the airline's largest shareholders.",
-  "local": "assets/img/n04-a-united-airlines-boeing-747-200-at-san-francisco-intern.jpg"
+  "caption": "A United Airlines 747 in San Francisco, 1990 — four years before employees became the airline's largest shareholders.",
+  "local": "assets/img/n04-a-united-airlines-boeing-747-200-at-san-francisco-intern.jpg",
+  "w": 576,
+  "h": 352
  },
  {
   "match_title_fragment": "",
@@ -723,7 +853,9 @@
   "license": "No known restrictions on publication.",
   "author": "Carol M. Highsmith",
   "caption": "The floor of the New York Stock Exchange, where the market decided what ESOP deals like Avis's and United's were worth.",
-  "local": "assets/img/n05-the-new-york-stock-exchange-trading-floor-on-wall-street.jpg"
+  "local": "assets/img/n05-the-new-york-stock-exchange-trading-floor-on-wall-street.jpg",
+  "w": 1194,
+  "h": 799
  },
  {
   "match_title_fragment": "Polaroid's ESOP becomes the poster child for 'ESOP as takeover defense'",
@@ -732,8 +864,10 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polaroid%20Land%20Camera%201000.jpg?width=1000",
   "license": "Creative Commons Attribution 2.0 Generic",
   "author": "Nina Matthews",
-  "caption": "The Polaroid Land Camera \u2014 the product behind the ESOP that became Wall Street's favorite takeover defense.",
-  "local": "assets/img/n06-a-polaroid-land-camera-1000-the-company-s-iconic-instant.jpg"
+  "caption": "The Polaroid Land Camera — the product behind the ESOP that became Wall Street's favorite takeover defense.",
+  "local": "assets/img/n06-a-polaroid-land-camera-1000-the-company-s-iconic-instant.jpg",
+  "w": 1280,
+  "h": 1678
  },
  {
   "match_title_fragment": "Sam Zell's $8.2B ESOP buyout of Tribune Company announced",
@@ -742,8 +876,10 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tribune%20Tower,%20Chicago,%20Illinois%20(9181666920).jpg?width=1000",
   "license": "Creative Commons Attribution-Share Alike 2.0 Generic (CC BY-SA 2.0)",
   "author": "Ken Lund (Reno, Nevada, USA)",
-  "caption": "Tribune Tower in Chicago, headquarters of the company Sam Zell took private in an $8.2 billion ESOP buyout in 2007 \u2014 a deal later blamed for the bankrupt culture that wiped out the paper's own employee-owners.",
-  "local": "assets/img/n07-tribune-tower-the-neo-gothic-headquarters-building-of-th.jpg"
+  "caption": "Tribune Tower in Chicago, headquarters of the company Sam Zell took private in an $8.2 billion ESOP buyout in 2007 — a deal later blamed for the bankrupt culture that wiped out the paper's own employee-owners.",
+  "local": "assets/img/n07-tribune-tower-the-neo-gothic-headquarters-building-of-th.jpg",
+  "w": 1200,
+  "h": 900
  },
  {
   "match_title_fragment": "Elizabeth Warren introduces the Accountable Capitalism Act",
@@ -754,7 +890,9 @@
   "author": "United States Senate",
   "caption": "Senator Elizabeth Warren, who introduced the 2018 Accountable Capitalism Act pushing to put workers on corporate boards.",
   "era_decade": "2010",
-  "local": "assets/img/n08-official-u-s-senate-portrait-of-elizabeth-warren-d-ma.jpg"
+  "local": "assets/img/n08-official-u-s-senate-portrait-of-elizabeth-warren-d-ma.jpg",
+  "w": 960,
+  "h": 1200
  },
  {
   "match_title_fragment": "Bernie Sanders backs a national inclusive-ownership plan for workers",
@@ -765,7 +903,9 @@
   "author": "Gage Skidmore",
   "caption": "Senator Bernie Sanders, who in 2019 unveiled a plan to mandate broad-based worker ownership stakes in large U.S. corporations.",
   "era_decade": "2010",
-  "local": "assets/img/n09-bernie-sanders-speaking-at-a-2015-campaign-event-in-phoe.jpg"
+  "local": "assets/img/n09-bernie-sanders-speaking-at-a-2015-campaign-event-in-phoe.jpg",
+  "w": 1280,
+  "h": 853
  },
  {
   "match_title_fragment": "New Belgium Brewing completes 100% employee ownership via ESOP",
@@ -774,9 +914,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/NewBelgiumBrewery.jpg?width=1000",
   "license": "Creative Commons Attribution-Share Alike 3.0 Unported (also available under CC BY 2.5 and GFDL 1.2+)",
   "author": "M. Doxtad",
-  "caption": "New Belgium Brewing's Fort Collins, Colorado home \u2014 the craft brewer completed its move to 100% employee ownership via ESOP in 2013.",
+  "caption": "New Belgium Brewing's Fort Collins, Colorado home — the craft brewer completed its move to 100% employee ownership via ESOP in 2013.",
   "era_decade": "2010",
-  "local": "assets/img/n10-exterior-of-the-new-belgium-brewing-company-brewery-in-f.jpg"
+  "local": "assets/img/n10-exterior-of-the-new-belgium-brewing-company-brewery-in-f.jpg",
+  "w": 1280,
+  "h": 696
  },
  {
   "match_title_fragment": "NYT: \"At King Arthur Flour, Savoring the Perks of Employee Ownership\"",
@@ -785,9 +927,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/King%20Arthur%20Baking%20Company%20store%20Norwich.jpg?width=1000",
   "license": "Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0)",
   "author": "Kenneth C. Zirkel",
-  "caption": "Inside the King Arthur Baking Company store in Norwich, Vermont \u2014 employee-owned via ESOP since 1996.",
+  "caption": "Inside the King Arthur Baking Company store in Norwich, Vermont — employee-owned via ESOP since 1996.",
   "era_decade": "2010",
-  "local": "assets/img/n11-interior-retail-shelves-inside-the-king-arthur-baking-co.jpg"
+  "local": "assets/img/n11-interior-retail-shelves-inside-the-king-arthur-baking-co.jpg",
+  "w": 1280,
+  "h": 817
  },
  {
   "match_title_fragment": "The Guardian runs Richard Wolff op-ed: \"Yes, there is an alternative to capitalism: Mondragon shows the way\"",
@@ -796,9 +940,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eroski.jpg?width=1000",
   "license": "Creative Commons Attribution-Share Alike 3.0 Unported (also CC BY 2.5 and GFDL 1.2+)",
   "author": "Yrithinnd",
-  "caption": "An Eroski supermarket in Vitoria, Spain \u2014 the retail cooperative of Mondragon Corporation, the world's largest worker-cooperative federation.",
+  "caption": "An Eroski supermarket in Vitoria, Spain — the retail cooperative of Mondragon Corporation, the world's largest worker-cooperative federation.",
   "era_decade": "2000",
-  "local": "assets/img/n12-eroski-shopping-center-exterior-in-vitoria-basque-countr.jpg"
+  "local": "assets/img/n12-eroski-shopping-center-exterior-in-vitoria-basque-countr.jpg",
+  "w": 1280,
+  "h": 755
  },
  {
   "match_title_fragment": "John Lewis Partnership brands every shop and staff member as 'Partners'",
@@ -809,7 +955,9 @@
   "author": "Jim Osley",
   "caption": "A John Lewis department store at Westfield Stratford City, London. Every John Lewis employee is a 'Partner' and part-owner of the business.",
   "era_decade": "2010",
-  "local": "assets/img/n13-exterior-of-the-john-lewis-store-at-westfield-stratford.jpg"
+  "local": "assets/img/n13-exterior-of-the-john-lewis-store-at-westfield-stratford.jpg",
+  "w": 1280,
+  "h": 855
  },
  {
   "match_title_fragment": "Cleveland Evergreen Cooperatives / \"Cleveland Model\" gets sustained advocacy-press profile",
@@ -818,9 +966,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown%20Cleveland%20-%20Cleveland%20Sunrise%20(47288342872).jpg?width=1000",
   "license": "Creative Commons Attribution 2.0 Generic (CC BY 2.0)",
   "author": "Erik Drost",
-  "caption": "Downtown Cleveland, Ohio \u2014 home to the Evergreen Cooperatives, the Mondragon-inspired 'Cleveland Model' of worker-owned businesses.",
+  "caption": "Downtown Cleveland, Ohio — home to the Evergreen Cooperatives, the Mondragon-inspired 'Cleveland Model' of worker-owned businesses.",
   "era_decade": "2010",
-  "local": "assets/img/n15-downtown-cleveland-ohio-skyline-at-sunrise.jpg"
+  "local": "assets/img/n15-downtown-cleveland-ohio-skyline-at-sunrise.jpg",
+  "w": 1280,
+  "h": 852
  },
  {
   "match_title_fragment": "Patagonia's Yvon Chouinard gives company to the planet",
@@ -830,7 +980,9 @@
   "license": "CC BY 2.0 (Creative Commons Attribution 2.0 Generic)",
   "author": "Sam Beebe (Samuel M Beebe, Ecotrust)",
   "caption": "A Patagonia storefront -- the outdoor brand Yvon Chouinard gave to a purpose trust and 'the planet' in 2022.",
-  "local": "assets/img/n16-patagonia-retail-storefront-heavenly-village-south-lake.jpg"
+  "local": "assets/img/n16-patagonia-retail-storefront-heavenly-village-south-lake.jpg",
+  "w": 1280,
+  "h": 960
  },
  {
   "match_title_fragment": "John Lewis Partnership pays no staff bonus",
@@ -840,7 +992,9 @@
   "license": "CC BY-SA 2.0 (Creative Commons Attribution-Share Alike 2.0 Generic)",
   "author": "Yuichi (Morioka, Japan)",
   "caption": "The John Lewis Partnership's Oxford Street flagship -- the employee-owned retailer whose annual staff bonus became a recurring British news ritual.",
-  "local": "assets/img/n17-the-john-lewis-department-store-flagship-on-oxford-stree.jpg"
+  "local": "assets/img/n17-the-john-lewis-department-store-flagship-on-oxford-stree.jpg",
+  "w": 1200,
+  "h": 900
  },
  {
   "match_title_fragment": "Colorado launches the nation's first state Office of Employee Ownership",
@@ -850,7 +1004,9 @@
   "license": "Public domain (U.S. federal government employee work)",
   "author": "U.S. Department of the Interior",
   "caption": "Colorado Governor Jared Polis, whose state stood up the nation's first Office of Employee Ownership in 2020.",
-  "local": "assets/img/n18-colorado-governor-jared-polis-at-a-2026-colorado-river-b.jpg"
+  "local": "assets/img/n18-colorado-governor-jared-polis-at-a-2026-colorado-river-b.jpg",
+  "w": 866,
+  "h": 1200
  },
  {
   "match_title_fragment": "",
@@ -861,7 +1017,9 @@
   "author": "Riis2602",
   "caption": "The Ohio Statehouse in Columbus -- the kind of state capitol where employee-ownership bills get written and debated.",
   "era_decade": "2020",
-  "local": "assets/img/n19-exterior-of-the-ohio-statehouse-columbus-ohio.jpg"
+  "local": "assets/img/n19-exterior-of-the-ohio-statehouse-columbus-ohio.jpg",
+  "w": 1280,
+  "h": 960
  },
  {
   "match_title_fragment": "Colorado launches the nation's first state Office of Employee Ownership",
@@ -871,7 +1029,9 @@
   "license": "CC BY-SA 4.0 (Creative Commons Attribution-Share Alike 4.0 International)",
   "author": "Michael Barera",
   "caption": "The Colorado State Capitol in Denver, home to the legislature that created the nation's first state Office of Employee Ownership.",
-  "local": "assets/img/n20-the-colorado-state-capitol-building-denver.jpg"
+  "local": "assets/img/n20-the-colorado-state-capitol-building-denver.jpg",
+  "w": 1280,
+  "h": 960
  },
  {
   "match_title_fragment": "TikTok/social trend re-litigating grocery-store ESOP wealth",
@@ -881,7 +1041,9 @@
   "license": "CC BY 4.0 (Creative Commons Attribution 4.0 International)",
   "author": "Nielsoncaetanosalmeron",
   "caption": "Inside a Publix -- the employee-owned grocer at the center of the 'Publix Millionaire' social-media trend.",
-  "local": "assets/img/n21-a-grocery-aisle-inside-a-publix-super-market-orlando-flo.jpg"
+  "local": "assets/img/n21-a-grocery-aisle-inside-a-publix-super-market-orlando-flo.jpg",
+  "w": 1280,
+  "h": 853
  },
  {
   "match_title_fragment": "Bipartisan Employee Equity Investment Act introduced in both chambers of Congress",
@@ -889,9 +1051,11 @@
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Capitol_Building_of_the_United_States_20240601.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Capitol%20Building%20of%20the%20United%20States%2020240601.jpg?width=1000",
   "license": "CC BY-SA 4.0 (Creative Commons Attribution-Share Alike 4.0 International)",
-  "author": "\u9890\u56ed\u5c45",
+  "author": "颐园居",
   "caption": "The U.S. Capitol, where the Bipartisan Employee Equity Investment Act and later employee-ownership bills were introduced.",
-  "local": "assets/img/n22-the-united-states-capitol-building-washington-d-c-2024.jpg"
+  "local": "assets/img/n22-the-united-states-capitol-building-washington-d-c-2024.jpg",
+  "w": 1280,
+  "h": 853
  },
  {
   "match_title_fragment": "Bernie Sanders addresses the Aspen Institute's Employee Ownership Ideas Forum",
@@ -901,29 +1065,35 @@
   "license": "Public domain (U.S. government work)",
   "author": "United States Congress / U.S. Senate",
   "caption": "Senator Bernie Sanders, who has repeatedly put employee ownership on Congress's agenda, from the Aspen Institute forum to a Senate HELP hearing.",
-  "local": "assets/img/n23-senator-bernie-sanders-official-u-s-senate-portrait.jpg"
+  "local": "assets/img/n23-senator-bernie-sanders-official-u-s-senate-portrait.jpg",
+  "w": 435,
+  "h": 577
  },
  {
   "match_title_fragment": "founding stock sale saves the team",
-  "subject": "The original 1923 Green Bay Packers, Inc. stock certificate \u2014 the founding document of the only fan/community-owned franchise in major U.S. pro sports",
+  "subject": "The original 1923 Green Bay Packers, Inc. stock certificate — the founding document of the only fan/community-owned franchise in major U.S. pro sports",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:1923_Green_Bay_Packers_stock_certificate.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/1923%20Green%20Bay%20Packers%20stock%20certificate.jpg?width=1000",
   "license": "Creative Commons Attribution-Share Alike 2.0 Generic",
   "author": "Midwest Communications",
   "caption": "The 1923 stock certificate that turned Packers fans into owners.",
   "era_decade": "1920",
-  "local": "assets/img/n24-the-original-1923-green-bay-packers-inc-stock-certificat.jpg"
+  "local": "assets/img/n24-the-original-1923-green-bay-packers-inc-stock-certificat.jpg",
+  "w": 1280,
+  "h": 853
  },
  {
   "match_title_fragment": "fourth stock sale funds Lambeau Field redevelopment",
-  "subject": "Lambeau Field, Green Bay, Wisconsin \u2014 the stadium built and repeatedly expanded with shareholder money from the Packers' fan-ownership stock sales",
+  "subject": "Lambeau Field, Green Bay, Wisconsin — the stadium built and repeatedly expanded with shareholder money from the Packers' fan-ownership stock sales",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Lambeau_Field_1.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lambeau%20Field%201.jpg?width=1000",
   "license": "Creative Commons Attribution-Share Alike 2.0 Generic",
   "author": "Chad Davis",
-  "caption": "Lambeau Field \u2014 expanded again and again on stock the fans bought.",
+  "caption": "Lambeau Field — expanded again and again on stock the fans bought.",
   "era_decade": "2010",
-  "local": "assets/img/n25-lambeau-field-green-bay-wisconsin-the-stadium-built-and.jpg"
+  "local": "assets/img/n25-lambeau-field-green-bay-wisconsin-the-stadium-built-and.jpg",
+  "w": 1280,
+  "h": 859
  },
  {
   "match_title_fragment": "The Ministry for the Future (Kim Stanley Robinson)",
@@ -934,10 +1104,12 @@
   "author": "Gage Skidmore",
   "caption": "Kim Stanley Robinson, who put a Mondragon-style co-op inside his vision of the future.",
   "era_decade": "2020",
-  "local": "assets/img/n26-science-fiction-author-kim-stanley-robinson-whose-novel.jpg"
+  "local": "assets/img/n26-science-fiction-author-kim-stanley-robinson-whose-novel.jpg",
+  "w": 942,
+  "h": 1200
  },
  {
-  "match_title_fragment": "\"9 to 5\" \u2014 Dolly Parton",
+  "match_title_fragment": "\"9 to 5\" — Dolly Parton",
   "subject": "Dolly Parton, who wrote and performed \"9 to 5,\" the working-class anthem that became a chart-topping hit and film theme",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Dolly_Parton_(6330904460).jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dolly%20Parton%20(6330904460).jpg?width=1000",
@@ -945,7 +1117,9 @@
   "author": "Eva Rinaldi",
   "caption": "Dolly Parton, who gave the working world its unofficial theme song.",
   "era_decade": "1980",
-  "local": "assets/img/n27-dolly-parton-who-wrote-and-performed-9-to-5-the-working.jpg"
+  "local": "assets/img/n27-dolly-parton-who-wrote-and-performed-9-to-5-the-working.jpg",
+  "w": 800,
+  "h": 1200
  },
  {
   "match_title_fragment": "Michael Moore's Capitalism: A Love Story",
@@ -956,10 +1130,12 @@
   "author": "Nicolas Richoffer",
   "caption": "Michael Moore, who put a worker occupation on movie screens nationwide.",
   "era_decade": "2000",
-  "local": "assets/img/n28-filmmaker-michael-moore-whose-documentary-capitalism-a-l.jpg"
+  "local": "assets/img/n28-filmmaker-michael-moore-whose-documentary-capitalism-a-l.jpg",
+  "w": 1280,
+  "h": 762
  },
  {
-  "match_title_fragment": "Other People's Money \u2014 the New England Wire & Cable buyback",
+  "match_title_fragment": "Other People's Money — the New England Wire & Cable buyback",
   "subject": "Actor Danny DeVito, who starred as corporate raider \"Larry the Liquidator\" in Other People's Money, the 1991 film about a worker-led buyback fight",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Danny_DeVito_by_Gage_Skidmore.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Danny%20DeVito%20by%20Gage%20Skidmore.jpg?width=1000",
@@ -967,40 +1143,48 @@
   "author": "Gage Skidmore",
   "caption": "Danny DeVito, who played the raider circling a worker buyback on screen.",
   "era_decade": "1990",
-  "local": "assets/img/n29-actor-danny-devito-who-starred-as-corporate-raider-larry.jpg"
+  "local": "assets/img/n29-actor-danny-devito-who-starred-as-corporate-raider-larry.jpg",
+  "w": 1009,
+  "h": 1200
  },
  {
   "match_title_fragment": "",
-  "subject": "A packed cinema audience at the Kino-Palatsi movie theater in Helsinki, floor seats, boxes and balcony all full \u2014 the moviegoing era-mood of the early Depression years",
+  "subject": "A packed cinema audience at the Kino-Palatsi movie theater in Helsinki, floor seats, boxes and balcony all full — the moviegoing era-mood of the early Depression years",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Audience_in_Kino-Palatsi_cinema_in_Helsinki_in_1930.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Audience%20in%20Kino-Palatsi%20cinema%20in%20Helsinki%20in%201930.jpg?width=1000",
   "license": "Creative Commons Attribution-Share Alike 4.0 International",
   "author": "Daniel Atelier / Helsinki City Museum",
-  "caption": "A full house at the movies, 1930 \u2014 the era when self-help cooperatives were spreading to a million-plus members.",
+  "caption": "A full house at the movies, 1930 — the era when self-help cooperatives were spreading to a million-plus members.",
   "era_decade": "1930",
-  "local": "assets/img/n30-a-packed-cinema-audience-at-the-kino-palatsi-movie-theat.jpg"
+  "local": "assets/img/n30-a-packed-cinema-audience-at-the-kino-palatsi-movie-theat.jpg",
+  "w": 1280,
+  "h": 821
  },
  {
-  "match_title_fragment": "\"9 to 5\" \u2014 the film",
-  "subject": "The Hollywood Sign overlooking Los Angeles \u2014 the film-industry landmark standing for the movie business that turned \"9 to 5\" into a box-office hit",
+  "match_title_fragment": "\"9 to 5\" — the film",
+  "subject": "The Hollywood Sign overlooking Los Angeles — the film-industry landmark standing for the movie business that turned \"9 to 5\" into a box-office hit",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Hollywood_sign_in_Los_Angeles.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hollywood%20sign%20in%20Los%20Angeles.jpg?width=1000",
   "license": "Creative Commons Attribution-Share Alike 4.0 International",
   "author": "Clementp.fr",
   "caption": "Hollywood, where \"9 to 5\" went from song to box-office hit.",
   "era_decade": "1980",
-  "local": "assets/img/n31-the-hollywood-sign-overlooking-los-angeles-the-film-indu.jpg"
+  "local": "assets/img/n31-the-hollywood-sign-overlooking-los-angeles-the-film-indu.jpg",
+  "w": 1280,
+  "h": 853
  },
  {
   "match_title_fragment": "The Capitalist Manifesto (Kelso & Adler)",
-  "subject": "Book Labyrinth, a shelf-lined interior at the Last Bookstore in downtown Los Angeles \u2014 bookstore atmosphere standing in for the print life of The Capitalist Manifesto",
+  "subject": "Book Labyrinth, a shelf-lined interior at the Last Bookstore in downtown Los Angeles — bookstore atmosphere standing in for the print life of The Capitalist Manifesto",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Book_Labyrinth-_the_Last_Bookstore.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Book%20Labyrinth-%20the%20Last%20Bookstore.jpg?width=1000",
   "license": "Creative Commons Attribution-Share Alike 3.0 Unported",
   "author": "Johnnydeezwax",
   "caption": "Wherever the book landed on the shelf, Kelso and Adler's argument kept circulating.",
   "era_decade": "1950",
-  "local": "assets/img/n32-book-labyrinth-a-shelf-lined-interior-at-the-last-bookst.jpg"
+  "local": "assets/img/n32-book-labyrinth-a-shelf-lined-interior-at-the-last-bookst.jpg",
+  "w": 1280,
+  "h": 949
  },
  {
   "match_title_fragment": "",
@@ -1011,7 +1195,9 @@
   "author": "Roadside Guitars",
   "caption": "The ribbon mic that carried radio news into American living rooms for two decades.",
   "era_decade": "1930",
-  "local": "assets/img/n33-a-restored-rca-44-a-ribbon-velocity-microphone-the-class.jpg"
+  "local": "assets/img/n33-a-restored-rca-44-a-ribbon-velocity-microphone-the-class.jpg",
+  "w": 685,
+  "h": 1408
  },
  {
   "match_title_fragment": "",
@@ -1022,18 +1208,22 @@
   "author": "George Grantham Bain Collection, Library of Congress",
   "caption": "Before any employee-ownership story could run, someone had to set the type by hand.",
   "era_decade": "1900",
-  "local": "assets/img/n34-linotype-operators-and-composing-room-workers-setting-ty.jpg"
+  "local": "assets/img/n34-linotype-operators-and-composing-room-workers-setting-ty.jpg",
+  "w": 640,
+  "h": 512
  },
  {
-  "match_title_fragment": "Mondragon Corporation \u2014 the world's largest worker cooperative",
-  "subject": "The town hall (Ayuntamiento) of Arrasate/Mondrag\u00f3n in Guip\u00fazcoa, Basque Country, Spain",
+  "match_title_fragment": "Mondragon Corporation — the world's largest worker cooperative",
+  "subject": "The town hall (Ayuntamiento) of Arrasate/Mondragón in Guipúzcoa, Basque Country, Spain",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Mondragon_-_Ayuntamiento_1.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mondragon%20-%20Ayuntamiento%201.jpg?width=1000",
   "license": "CC0 1.0 Universal Public Domain Dedication",
   "author": "Zarateman",
   "caption": "The Basque town that gave its name to the world's largest worker cooperative.",
   "era_decade": "",
-  "local": "assets/img/n35-the-town-hall-ayuntamiento-of-arrasate-mondrag-n-in-guip.jpg"
+  "local": "assets/img/n35-the-town-hall-ayuntamiento-of-arrasate-mondrag-n-in-guip.jpg",
+  "w": 1280,
+  "h": 960
  },
  {
   "match_title_fragment": "",
@@ -1042,9 +1232,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Black%20Star%20Line%20Stock%20Certificate.jpg?width=1000",
   "license": "CC BY-SA 4.0",
   "author": "Rblack131",
-  "caption": "A century-old share certificate \u2014 proof that paper ownership predates every ESOP by decades.",
+  "caption": "A century-old share certificate — proof that paper ownership predates every ESOP by decades.",
   "era_decade": "1910",
-  "local": "assets/img/n36-a-1919-black-star-line-stock-certificate-for-five-5-shar.jpg"
+  "local": "assets/img/n36-a-1919-black-star-line-stock-certificate-for-five-5-shar.jpg",
+  "w": 1200,
+  "h": 945
  },
  {
   "match_title_fragment": "",
@@ -1055,7 +1247,9 @@
   "author": "UW Digital Collections (University of Washington Libraries, Labor Archives Digital Collections)",
   "caption": "Union halls like this one were where American workers first argued over what 'ownership' should mean.",
   "era_decade": "1920",
-  "local": "assets/img/n37-interior-of-the-industrial-workers-of-the-world-meeting.jpg"
+  "local": "assets/img/n37-interior-of-the-industrial-workers-of-the-world-meeting.jpg",
+  "w": 953,
+  "h": 745
  },
  {
   "match_title_fragment": "Taylor Guitars becomes 100% employee-owned -- covered in the guitar press",
@@ -1066,7 +1260,9 @@
   "author": "Joseph Brent from New York, USA",
   "caption": "The lutherie craft that, decades later, gave Taylor Guitars a workforce worth owning outright.",
   "era_decade": "",
-  "local": "assets/img/n38-early-acoustic-guitars-on-display-inside-the-c-f-martin.jpg"
+  "local": "assets/img/n38-early-acoustic-guitars-on-display-inside-the-c-f-martin.jpg",
+  "w": 1280,
+  "h": 853
  },
  {
   "match_title_fragment": "New Belgium Brewing completes 100% employee ownership via ESOP",
@@ -1075,12 +1271,14 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Brewing%20Tanks.jpg?width=1000",
   "license": "CC BY-SA 3.0 Unported",
   "author": "Hongreddotbrewhouse",
-  "caption": "The tanks behind every craft-brewery ESOP story \u2014 New Belgium's employees cashed out on tanks just like these.",
+  "caption": "The tanks behind every craft-brewery ESOP story — New Belgium's employees cashed out on tanks just like these.",
   "era_decade": "",
-  "local": "assets/img/n39-row-of-large-stainless-steel-cylindro-conical-fermentati.jpg"
+  "local": "assets/img/n39-row-of-large-stainless-steel-cylindro-conical-fermentati.jpg",
+  "w": 1280,
+  "h": 853
  },
  {
-  "match_title_fragment": "Publix \u2014 the largest ESOP in America",
+  "match_title_fragment": "Publix — the largest ESOP in America",
   "subject": "Shoppers queued at a grocery-store checkout lane",
   "file_page_url": "https://commons.wikimedia.org/wiki/File:Checkout_line_for_grocery_store.jpg",
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Checkout%20line%20for%20grocery%20store.jpg?width=1000",
@@ -1088,7 +1286,9 @@
   "author": "Sonny doe",
   "caption": "The checkout line that made 'employee-owned' a supermarket slogan, from Publix to WinCo.",
   "era_decade": "",
-  "local": "assets/img/n40-shoppers-queued-at-a-grocery-store-checkout-lane.jpg"
+  "local": "assets/img/n40-shoppers-queued-at-a-grocery-store-checkout-lane.jpg",
+  "w": 900,
+  "h": 1200
  },
  {
   "match_title_fragment": "",
@@ -1097,9 +1297,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/High%20Street%20Bakery%20-%20geograph.org.uk%20-%204012568.jpg?width=1000",
   "license": "CC BY-SA 2.0 (Creative Commons Attribution-ShareAlike 2.0 Generic)",
   "author": "Michael Trolove (via geograph.org.uk)",
-  "caption": "The British high street storefront \u2014 backdrop for a century of John Lewis-style staff ownership.",
+  "caption": "The British high street storefront — backdrop for a century of John Lewis-style staff ownership.",
   "era_decade": "2010",
-  "local": "assets/img/n41-a-bakery-shopfront-on-the-high-street-in-corby-england-p.jpg"
+  "local": "assets/img/n41-a-bakery-shopfront-on-the-high-street-in-corby-england-p.jpg",
+  "w": 800,
+  "h": 600
  },
  {
   "match_title_fragment": "",
@@ -1108,9 +1310,11 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/1936%20Ford%20Panel%20Delivery%20(4331917568).jpg?width=1000",
   "license": "CC BY 2.0 (Creative Commons Attribution 2.0 Generic)",
   "author": "John Lloyd, from Concrete, Washington, United States",
-  "caption": "The delivery truck as small-business icon \u2014 the vehicle every employee-owned grocer and bakery still runs.",
+  "caption": "The delivery truck as small-business icon — the vehicle every employee-owned grocer and bakery still runs.",
   "era_decade": "1930",
-  "local": "assets/img/n42-a-restored-1936-ford-panel-delivery-truck-photographed-a.jpg"
+  "local": "assets/img/n42-a-restored-1936-ford-panel-delivery-truck-photographed-a.jpg",
+  "w": 1280,
+  "h": 960
  },
  {
   "match_title_fragment": "The Rochdale Pioneers story travels through the American and international labor press",
@@ -1119,8 +1323,10 @@
   "download_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lewis%20Hine,%20Pasquale%20Lolara,%20Ercola%20Guallilo,%20Jerry%20Paciello,%20Frank%20Graciana,%20newsboys,%20Utica,%20New%20York,%201910.jpg?width=1000",
   "license": "No known copyright restrictions (National Child Labor Committee collection, Library of Congress)",
   "author": "Photograph by Lewis Wickes Hine, February 1910",
-  "caption": "The kids who put the labor press into American hands \u2014 the same press that carried Rochdale's story stateside.",
+  "caption": "The kids who put the labor press into American hands — the same press that carried Rochdale's story stateside.",
   "era_decade": "1910",
-  "local": "assets/img/n43-four-newsboys-pose-in-utica-new-york-after-selling-out-t.jpg"
+  "local": "assets/img/n43-four-newsboys-pose-in-utica-new-york-after-selling-out-t.jpg",
+  "w": 1280,
+  "h": 1015
  }
 ]
