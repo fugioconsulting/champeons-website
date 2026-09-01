@@ -329,7 +329,6 @@ def build():
 <header class="masthead">
   <a class="wordmark" href="#top">Champ<span>EO</span>ns</a>
   <span class="mast-note">From the ChampEOns podcast &mdash; Champions of Employee Ownership</span>
-  <button class="surprise" id="surprise" title="Jump to a random moment">&#9889; Surprise me</button>
 </header>
 
 <nav class="channelbar" id="channelbar" aria-label="Jump to era">
@@ -351,7 +350,7 @@ def build():
     <p class="eyebrow">The public record &middot; 1844&ndash;2026</p>
     <h1>The Ownership<br><em>Airwaves</em></h1>
     <p class="lede"><strong>This is the complete public history of employee ownership</strong> &mdash; every time the idea that workers should own their companies escaped the boardroom and reached actual people. Front pages, prime time, movie screens, podcasts, stadium PA systems and viral feeds: {total} moments, every one fact-checked against a source you can click.</p>
-    <p class="hero-how">Scroll the eras, hit <b>&#9889; Surprise me</b> to channel-surf, or start with the ten biggest moments below. Photos open full-size; gold dots mean a mass audience saw it; red means the coverage was hostile.</p>
+    <p class="hero-how">Scroll the eras, or start with the ten biggest moments below. Photos open full-size; gold dots mean a mass audience saw it; red means the coverage was hostile.</p>
     <dl class="stats">
       <div><dd data-count="{total}">0</dd><dt>verified moments</dt></div>
       <div><dd data-count="{massive}">0</dd><dt>reached a mass audience</dt></div>
@@ -417,13 +416,6 @@ img{max-width:100%;display:block}
 .wordmark{font-family:Graduate,serif;font-size:19px;letter-spacing:.04em;text-decoration:none;color:var(--white)}
 .wordmark span{color:var(--gold)}
 .mast-note{flex:1;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
-.surprise{
-  font:inherit;font-size:12px;font-weight:700;letter-spacing:.05em;
-  padding:8px 14px;border-radius:999px;cursor:pointer;
-  background:var(--gold);color:#1a1200;border:0;
-  transition:transform .12s ease,box-shadow .12s ease;
-}
-.surprise:hover{transform:translateY(-1px);box-shadow:0 4px 18px -6px rgba(240,183,80,.5)}
 
 /* channel bar */
 .channelbar{
@@ -730,15 +722,6 @@ JS = r"""
     el.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'center'});
     el.classList.remove('zap'); void el.offsetWidth; el.classList.add('zap');
   }
-  $('#surprise').addEventListener('click',function(){
-    var vis=evs.filter(function(e){return !e.classList.contains('hidden')});
-    if(vis.length){
-      jumpTo(vis[Math.floor(Math.random()*vis.length)]);
-    } else {
-      count.textContent='Nothing matches your filters — hit Clear all';
-      if(drawer.hidden){drawer.hidden=false;toggle.setAttribute('aria-expanded','true')}
-    }
-  });
   $$('.pt-chip').forEach(function(c){
     c.addEventListener('click',function(){
       var el=document.getElementById(c.dataset.target);
