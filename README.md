@@ -1,4 +1,4 @@
-# The Ownership Airwaves
+# Employee Ownership Media History
 
 The ChampEOns research file: every time employee ownership reached the public — 346 verified moments across 182 years of front pages, films, broadcasts and viral stories.
 
