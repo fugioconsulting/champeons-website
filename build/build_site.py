@@ -63,6 +63,11 @@ PRIME_TIME = [
     ("green bay packers inc fancommunity ownership", "The Packers model"),
 ]
 
+# Podcast links. Add Substack/Spotify/Apple here and they appear in the closing CTA.
+SHOW_LINKS = [
+    ("Watch on YouTube", "https://www.youtube.com/@champeonsofeo", True),
+]
+
 REACH_LABEL = {"massive": "Mass audience", "national": "National", "regional": "Regional",
                "trade": "Trade", "niche": "Niche", "unknown": "—"}
 
@@ -306,6 +311,11 @@ def build():
   </div>
 </section>""")
 
+    cta_buttons = "".join(
+        f'<a class="cta-btn{" primary" if primary else ""}" href="{esc(url)}" target="_blank" rel="noopener">{esc(label)}</a>'
+        for label, url, primary in SHOW_LINKS
+    )
+
     doc = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -367,11 +377,18 @@ def build():
 
 {''.join(sections)}
 
+  <section class="cta">
+    <p class="cta-eyebrow">The record ends here. The story doesn&rsquo;t.</p>
+    <h2>What&rsquo;s next in<br><em>employee ownership?</em></h2>
+    <p class="cta-lede">Every moment on this page was somebody deciding the people who do the work should own the place. That argument is still going &mdash; and it just got the highest stakes it has ever had. <strong>ChampEOns</strong> is Chris Graham and Tim Rettig on the companies, the deals, the villains, and the fight to make ownership normal.</p>
+    <div class="cta-actions">{cta_buttons}</div>
+    <p class="cta-refrain">The robots are coming.<br>And we better own them.</p>
+  </section>
+
   <footer class="foot">
     <h2 class="foot-title">How this was built</h2>
     <p>More than a hundred research agents swept the record era by era and channel by channel &mdash; newspapers, network television, film, advertising, politics, audio and the viral internet. Every candidate moment was then re-checked by an independent fact-checker against a live source; what couldn't be substantiated was cut. Entries marked <span class="m-conf c-likely">likely</span> or <span class="m-conf c-uncertain">uncertain</span> are believed real but not pinned to a public source &mdash; treat them as leads. Photographs are public domain or Creative Commons, credited in each caption; click any photo for its license and origin.</p>
     <p>Spotted something we missed &mdash; or something wrong? The record should grow. <a href="https://github.com/fugioconsulting/champeons-website/issues" target="_blank" rel="noopener">Send it to the show</a>.</p>
-    <p class="refrain">The robots are coming. And we better own them.</p>
     <p class="foot-brand">&copy; Champions of Employee Ownership LLC &middot; Produced by Fugio Consulting</p>
   </footer>
 </main>
@@ -588,6 +605,40 @@ a.src:hover{border-color:var(--gold);color:var(--ink)!important;background:var(-
 /* zap flash for surprise/prime-time jumps */
 @keyframes zap{0%{background:rgba(240,183,80,.22)}100%{background:transparent}}
 .ev.zap{animation:zap 1.6s ease-out 1}
+
+/* closing CTA */
+.cta{
+  margin-top:86px;padding:52px clamp(22px,5vw,60px);
+  background:var(--surface);border-top:3px solid var(--gold);
+  position:relative;overflow:hidden;
+}
+.cta::after{
+  content:"";position:absolute;right:-70px;top:-70px;width:280px;height:280px;
+  border-radius:50%;background:radial-gradient(circle,rgba(240,183,80,.13),transparent 68%);
+  pointer-events:none;
+}
+.cta-eyebrow{margin:0 0 14px;font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.cta h2{
+  font-family:Graduate,serif;font-weight:400;margin:0 0 18px;
+  font-size:clamp(1.9rem,5.2vw,3.4rem);line-height:1.03;color:var(--white);text-wrap:balance;
+}
+.cta h2 em{font-style:normal;color:var(--gold)}
+.cta-lede{max-width:60ch;margin:0 0 28px;font-size:clamp(.98rem,1.5vw,1.12rem);color:var(--ink-2)}
+.cta-lede strong{color:var(--white)}
+.cta-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
+.cta-btn{
+  display:inline-flex;align-items:center;min-height:48px;padding:0 24px;
+  font-size:14.5px;font-weight:700;letter-spacing:.02em;text-decoration:none;border-radius:999px;
+  background:transparent;color:var(--ink);border:1px solid var(--line);
+  transition:transform .13s ease,border-color .13s ease,background .13s ease;
+}
+.cta-btn:hover{transform:translateY(-2px);border-color:var(--gold);color:var(--white)}
+.cta-btn.primary{background:var(--gold);border-color:var(--gold);color:#17120a}
+.cta-btn.primary:hover{background:#ffc95f;color:#17120a}
+.cta-refrain{
+  margin:0;font-family:Graduate,serif;font-size:clamp(1.15rem,2.6vw,1.75rem);
+  line-height:1.25;color:var(--gold);
+}
 
 /* footer */
 .foot{margin-top:80px;padding-top:30px;border-top:2px solid var(--gold);color:var(--ink-2);font-size:14px}
